@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { FeatureCard, Hero } from "components";
+import { FeatureCard, Hero, Testimonial } from "components";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <main className="w-full">
         <Hero />
         <FeatureCard />
+        <Testimonial />
       </main>
     </div>
   );

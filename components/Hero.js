@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { PrimaryButton } from "./PrimaryButton";
 export { Hero };
 
 function Hero() {
@@ -16,12 +16,8 @@ function Hero() {
                 <br></br>
                 Become your team's resident performance expert.
               </p>
-              <div className="mt-8">
-                <Link href="/">
-                  <a className="bg-red-700 text-white text-2xl font-black px-8 py-4 rounded-md inline-block hover:bg-red-600 transition ease-in-out duration-150 ">
-                    Start Learning →
-                  </a>
-                </Link>
+              <div className="mt-12">
+                <PrimaryButton text="Start Learning →" />
                 <span className="block text-red-700 mt-2 text-sm">
                   100% free. No CC required.
                 </span>
