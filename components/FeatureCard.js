@@ -22,7 +22,7 @@ const features = [
 
 function FeatureCard() {
   return (
-    <section className="relative bg-gray-900 py-12  border-t border-gray-50 border-opacity-50">
+    <section className="relative bg-gray-900 py-12 pb-16 border-t border-gray-50 border-opacity-50">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (

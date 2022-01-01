@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { FeatureCard, Hero, Testimonial } from "components";
+import { FeatureCard, Hero, Testimonial, ValuePropositions } from "components";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <Hero />
         <FeatureCard />
         <Testimonial />
+        <ValuePropositions />
       </main>
     </div>
   );
