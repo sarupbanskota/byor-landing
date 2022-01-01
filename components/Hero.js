@@ -14,7 +14,7 @@ function Hero() {
               <p className="mt-3 max-w-md mx-auto text-lg font-semibold sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
                 Build your own Redis. Get crystal clear on how it works.{" "}
                 <br></br>
-                Become your team's resident performance expert.
+                Become your team&apos;s resident performance expert.
               </p>
               <div className="mt-12">
                 <PrimaryButton text="Start Learning →" />
