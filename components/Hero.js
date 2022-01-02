@@ -53,29 +53,29 @@ function Hero() {
           <div className="mt-8 grid grid-cols-2 gap-8  lg:grid-cols-4">
             <div className="col-span-1 flex justify-center  lg:col-span-1">
               <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                className="h-12 mix-blend-luminosity"
+                src="/icons/logos/Amazon.svg"
                 alt="Tuple"
               />
             </div>
             <div className="col-span-1 flex justify-center  lg:col-span-1">
               <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+                className="h-12 mix-blend-luminosity"
+                src="/icons/logos/Facebook.svg"
                 alt="Mirage"
               />
             </div>
             <div className="col-span-1 flex justify-center  lg:col-span-1">
               <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                className="h-12 mix-blend-luminosity"
+                src="/icons/logos/Uber.svg"
                 alt="StaticKit"
               />
             </div>
             <div className="col-span-1 flex justify-center  lg:col-span-1">
               <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+                className="h-12 mix-blend-luminosity"
+                src="/icons/logos/Walmart.svg"
                 alt="Transistor"
               />
             </div>

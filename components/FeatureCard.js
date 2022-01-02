@@ -8,7 +8,7 @@ const features = [
     desc: "Redis pro, in one week. Unlock a new stage every day, and continue making progress.",
   },
   {
-    icon: "/icons/GoRust.svg",
+    icon: "/icons/GoPythonRust-updated.svg",
     name: "Whatever language.",
     desc: "Want to pick up Rust? Go? Python? We’re biased, but this is the best way.",
   },
