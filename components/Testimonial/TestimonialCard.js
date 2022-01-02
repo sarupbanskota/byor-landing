@@ -2,7 +2,7 @@ export { TestimonialCard };
 
 function TestimonialCard() {
   return (
-    <div className="inline-block align-bottom bg-white rounded-lg px-8 py-10 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-md sm:w-full border border-gray-50">
+    <div className="inline-block align-bottom bg-white rounded-lg px-8 py-10 text-left overflow-hidden shadow-xl transform transition-all my-8 sm:align-middle sm:max-w-md sm:w-full border border-gray-50">
       <div>
         <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
           <span className="inline-block relative">
