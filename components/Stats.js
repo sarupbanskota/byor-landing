@@ -12,7 +12,7 @@ function Stats({ attempts, level }) {
           <p>334 Attemts</p>
         </div>
         <div>
-          <span className="bg-red-700 rounded-md text-white px-2 py-1">
+          <span className="bg-red-700 rounded-sm text-white px-2 py-1">
             Intermediate
           </span>
         </div>

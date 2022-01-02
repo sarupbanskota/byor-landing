@@ -4,3 +4,4 @@ export * from "./Testimonial";
 export * from "./PrimaryButton";
 export * from "./ValuePropostions";
 export * from "./Stats";
+export * from "./CourseCards";
