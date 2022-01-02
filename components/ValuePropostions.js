@@ -25,7 +25,7 @@ function ValuePropositions() {
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900">
                   Is this course for me?
                 </h2>
                 <div className="mt-10 space-y-10 max-w-lg">
@@ -38,7 +38,7 @@ function ValuePropositions() {
                           alt=""
                         />
                       </div>
-                      <p className="ml-16 text-2xl leading-6 font-medium text-gray-900">
+                      <p className="ml-16 text-xl md:text-2xl leading-6 font-medium text-gray-900">
                         {item.desc}
                       </p>
                     </div>

@@ -17,11 +17,11 @@ function Stats({ attempts, level }) {
           </span>
         </div>
       </div>
-      <div className="mt-8  bg-white p-6 border border-red-600">
-        <p className=" flow-root">
-          <span>
+      <div className="inline-block mt-8 bg-white p-6 border border-red-600 text-center md:text-left">
+        <p className="">
+          <span className="inline-flex items-center">
             <svg
-              className="-ml-0.5 mr-1.5 h-4 w-4 text-green-400"
+              className="-ml-0.5 mr-1.5 h-4 w-4 text-green-400 inline"
               fill="currentColor"
               viewBox="0 0 8 8"
             >
