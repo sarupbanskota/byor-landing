@@ -6,6 +6,7 @@ import {
   Hero,
   Testimonial,
   ValuePropositions,
+  WaitlistForm,
 } from "components";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <Testimonial />
         <ValuePropositions />
         <CourseCards />
+        <WaitlistForm />
       </main>
     </div>
   );
