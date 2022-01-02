@@ -5,3 +5,5 @@ export * from "./PrimaryButton";
 export * from "./ValuePropostions";
 export * from "./Stats";
 export * from "./CourseCards";
+export * from "./WaitlistForm";
+export * from "./Footer";
