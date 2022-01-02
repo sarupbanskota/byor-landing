@@ -1,3 +1,5 @@
+import { Stats } from "./Stats";
+
 export { ValuePropositions };
 
 const values = [
@@ -42,6 +44,7 @@ function ValuePropositions() {
                     </div>
                   ))}
                 </div>
+                <Stats />
               </div>
             </div>
           </div>
