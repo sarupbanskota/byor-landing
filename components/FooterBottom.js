@@ -29,20 +29,20 @@ function FooterBottom() {
   return (
     // create a component with logo and text in a flex container
     <div className="mt-12">
-      <div className="flex  items-start md:items-center gap-4 flex-col md:flex-row">
+      <div className="flex lg:items-start items-center gap-4 flex-col lg:flex-row">
         <img
           src="/icons/logos/CodeCrafters.png"
           alt="logo"
           className="w-12 h-12"
         />
-        <p className="text-gray-500 text-xs font-bold">
+        <p className="text-gray-500 text-xs font-bold text-center lg:text-left">
           CodeCrafters. <br />
           <span className="font-normal">
             Programming challenges for seasoned developers.
           </span>
         </p>
       </div>
-      <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row items-center justify-between pb-0">
         <div className="flex justify-center space-x-6 md:order-2 text-xs">
           {social.map((item) => (
             <a
@@ -62,7 +62,7 @@ function FooterBottom() {
         </div>
         <div className="md:order-3 border border-gray-100 px-3 py-1.5 rounded-md inline-flex gap-2">
           Status{" "}
-          <span className="inline-flex items-center  text-sm font-medium  text-indigo-800">
+          <span className="inline-flex items-center  text-sm font-medium text-indigo-800">
             <svg
               className="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400"
               fill="currentColor"
