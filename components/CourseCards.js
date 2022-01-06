@@ -33,9 +33,9 @@ function classNames(...classes) {
 
 function CourseCards() {
   return (
-    <div className="bg-indigo-200 bg-opacity-25">
+    <div className="bg-white bg-opacity-25">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <p className="text-center text-3xl font-normal mb-12">
+        <p className="text-center text-xl font-normal mb-12">
           Sign up for our upcoming courses
         </p>
         <div className="flex gap-8 overflow-scroll flex-col md:flex-row items-center">
@@ -67,10 +67,10 @@ function CourseCards() {
                         : course.theme === "seablue"
                         ? "bg-blue-500"
                         : "bg-sky-900",
-                      "flex-grow inline-flex justify-center rounded-sm border border-transparent shadow-sm px-4 py-2 text-white text-xl font-black"
+                      "flex-grow inline-flex justify-center rounded-sm border border-transparent shadow-sm px-2 py-1 md:px-4 md:py-2 text-white text-lg md:text-xl font-black"
                     )}
                   >
-                    {course.level}
+                    {course.level.toUpperCase()}
                   </div>
                   <span
                     className={classNames(
@@ -79,7 +79,7 @@ function CourseCards() {
                         : course.theme === "seablue"
                         ? "text-blue-500"
                         : "text-sky-900",
-                      "flex-grow inline justify-center bg-white text-xl font-medium text-gray-700 sm:mt-0"
+                      "flex-grow inline justify-center bg-white text-xl font-medium sm:mt-0"
                     )}
                   >
                     {course.formattedDate}

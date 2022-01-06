@@ -25,7 +25,7 @@ function ValuePropositions() {
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div className="mt-6">
-                <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900">
+                <h2 className="text-center md:text-left text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900">
                   Is this course for me?
                 </h2>
                 <div className="mt-10 space-y-10 max-w-lg">
@@ -33,12 +33,12 @@ function ValuePropositions() {
                     <div key={item.id} className="relative">
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md  text-white">
                         <img
-                          className="rounded-full"
+                          className="rounded-full w-6 md:w-12 h-10 md:h-10"
                           src="/icons/check.svg"
                           alt=""
                         />
                       </div>
-                      <p className="ml-16 text-xl md:text-2xl leading-6 font-medium text-gray-900">
+                      <p className="ml-16 md:text-2xl leading-6 font-medium text-gray-900">
                         {item.desc}
                       </p>
                     </div>
@@ -52,7 +52,7 @@ function ValuePropositions() {
             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
+                src="icons/app-screenshot-2.png"
                 alt="Inbox user interface"
               />
             </div>

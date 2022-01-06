@@ -2,7 +2,7 @@ export { Stats };
 
 function Stats({ attempts, level }) {
   return (
-    <div className="text-2xl font-bold mt-6 py-6 md:py-8">
+    <div className="text-2xl font-bold mt-6 py-6 md:py-8 flex flex-col items-center w-full md:items-start">
       <div className="flex items-center gap-8 flex-col md:flex-row">
         <div className="flex gap-4 items-center flex-col md:flex-row">
           <div>
@@ -12,14 +12,14 @@ function Stats({ attempts, level }) {
           <p>334 Attempts</p>
         </div>
         <div>
-          <span className="bg-red-700 rounded-sm text-white px-2 py-1">
+          <span className="bg-teal-700 rounded-sm text-white px-2 py-1">
             Intermediate
           </span>
         </div>
       </div>
-      <div className="inline-block mt-8 bg-white p-6 border border-red-600 text-center md:text-left">
-        <p className="">
-          <span className="inline-flex items-center">
+      <div className="inline-block mt-8 bg-white p-6 border border-teal-600 text-center md:text-left">
+        <p className="text-sm md:text-base lg:text-lg">
+          <span>
             <svg
               className="-ml-0.5 mr-1.5 h-4 w-4 text-green-400 inline"
               fill="currentColor"
