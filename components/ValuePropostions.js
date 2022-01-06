@@ -28,7 +28,7 @@ function ValuePropositions() {
                 <h2 className="text-center md:text-left text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900">
                   Is this course for me?
                 </h2>
-                <div className="mt-10 space-y-10 max-w-lg">
+                <div className="mt-10 space-y-4 md:space-y-6 lg:space-y-10 max-w-lg">
                   {values.map((item) => (
                     <div key={item.id} className="relative">
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md  text-white">
@@ -48,7 +48,7 @@ function ValuePropositions() {
               </div>
             </div>
           </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0">
+          <div className="mt-12 sm:mt-16 lg:mt-0 -mr-2.5 md:mr-0">
             <div className="pl-4 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"

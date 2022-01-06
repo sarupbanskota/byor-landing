@@ -2,7 +2,7 @@ export { WaitlistForm };
 
 function WaitlistForm() {
   return (
-    <div className="mx-auto max-w-md px-4 sm:max-w-3xl lg:max-w-7xl">
+    <div className="mx-auto max-w-md sm:max-w-3xl lg:max-w-7xl">
       <div className="relative px-4 py-4 my-8 overflow-hidden sm:px-12 sm:py-20 bg-gray-100 rounded-md">
         <form className="sm:flex items-center justify-center">
           <label htmlFor="email-address" className="sr-only">

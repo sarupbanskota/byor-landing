@@ -17,7 +17,7 @@ function Testimonial() {
         </p>
         <TestimonialCard />
         <PrimaryButton text="Start Learning →" />
-        <div className="inline-flex mt-4 gap-2">
+        <div className="inline-flex mt-4 gap-2 items-center">
           <StackedAvatars />{" "}
           <p className="text-teal-700 text-sm">Read more testimonials </p>
         </div>
