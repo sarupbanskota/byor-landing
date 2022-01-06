@@ -2,8 +2,8 @@ export { WaitlistForm };
 
 function WaitlistForm() {
   return (
-    <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 bg-gray-100">
-      <div className="relative px-6 py-10 overflow-hidden sm:px-12 sm:py-20">
+    <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="relative px-4 py-4 my-8 overflow-hidden sm:px-12 sm:py-20 bg-gray-100 rounded-md">
         <form className="mt-8 sm:flex items-center justify-center">
           <label htmlFor="email-address" className="sr-only">
             Email address
@@ -20,7 +20,7 @@ function WaitlistForm() {
           <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
             <button
               type="submit"
-              className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              className="w-full flex items-center justify-center px-5 py-3 text-base font-medium rounded-md text-white bg-gradient-to-r from-teal-600 to-teal-800 hover:from-teal-500 hover:to-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
             >
               Join waitlist
             </button>

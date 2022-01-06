@@ -60,7 +60,7 @@ function FooterBottom() {
             &copy; 2022 CodeCrafters Inc. All rights reserved.
           </p>
         </div>
-        <div className="md:order-3 border border-gray-100 px-3 py-1.5 rounded-md inline-flex gap-2">
+        <div className="md:order-3 border border-gray-100 px-3 py-1.5 rounded-md inline-flex gap-2 mt-10 md:mt-0">
           Status{" "}
           <span className="inline-flex items-center  text-sm font-medium text-indigo-800">
             <svg

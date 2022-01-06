@@ -22,7 +22,6 @@ export default function Home() {
         <Testimonial />
         <ValuePropositions />
         <CourseCards />
-        <WaitlistForm />
       </main>
     </div>
   );

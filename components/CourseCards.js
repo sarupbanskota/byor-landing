@@ -1,3 +1,5 @@
+import { WaitlistForm } from "./WaitlistForm";
+
 export { CourseCards };
 
 const upcomingCourses = [
@@ -96,6 +98,7 @@ function CourseCards() {
             </a>
           ))}
         </div>
+        <WaitlistForm />
       </div>
     </div>
   );
