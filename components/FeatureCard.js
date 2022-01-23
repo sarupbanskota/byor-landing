@@ -4,12 +4,12 @@ export { FeatureCard };
 const features = [
   {
     icon: "/icons/calendar.svg",
-    name: "A new challenge, daily.",
+    name: "Familiar, Real Projects.",
     desc: "Redis pro, in one week. Unlock a new stage every day, and continue making progress.",
   },
   {
     icon: "/icons/GoPythonRust-updated.svg",
-    name: "Whatever language.",
+    name: "On Your Own Machine.",
     desc: "Want to pick up Rust? Go? Python? We’re biased, but this is the best way.",
   },
   {

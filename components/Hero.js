@@ -25,7 +25,7 @@ function Hero() {
                 </span>
               </div> */}
               <p className="italic text-lg max-w-xl mt-8 inline-block">
-                “The Build your own Redis series was a refreshing way to pickup Rust. Plus I got to appreciate Redis internals for free” —{" "}
+                “The Build your own X series was a refreshing way to pickup Rust. Plus I got to appreciate Redis internals for free” —{" "}
                 <span className="underline underline-offset-4">Reddit</span>
               </p>
             </div>

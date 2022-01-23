@@ -107,7 +107,7 @@ function CourseCards({title, waitlist, upcomingOnly}) {
                       "flex-grow inline-flex justify-center rounded-sm border border-transparent shadow-sm px-2 py-1 md:px-4 md:py-2 text-white text-lg md:text-xl font-black"
                     )}
                   >
-                    {course.level.toUpperCase()}
+                    Try {course.level} →
                   </div>
                   <span
                     className={classNames(
