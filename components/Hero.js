@@ -16,7 +16,7 @@ function Hero() {
               <p className="mt-3 max-w-md mx-auto text-lg font-semibold sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
                 Build a real project. Attain Rust mastery.{" "}
                 <br className="hidden md:block"></br>
-                Be your team&apos;s resident performance expert.
+                Become your team&apos;s resident perf expert.
               </p>
               {/* <div className="mt-8">
                 <PrimaryButton text="Choose Project →" />
@@ -24,10 +24,10 @@ function Hero() {
                   100% free. No CC required.
                 </span>
               </div> */}
-              {/* <p className="italic text-lg max-w-xl mt-8 inline-block">
+              <p className="italic text-lg max-w-xl mt-8 inline-block">
                 “The Build your own Redis series was a refreshing way to pickup Rust. Plus I got to appreciate Redis internals for free” —{" "}
                 <span className="underline underline-offset-4">Reddit</span>
-              </p> */}
+              </p>
             </div>
           </div>
         </div>

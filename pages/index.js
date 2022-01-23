@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
-        <title>Learn Rust</title>
+        <title>Master Rust with real projects</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full">
@@ -21,7 +21,8 @@ export default function Home() {
         <FeatureCard />
         <Testimonial />
         <ValuePropositions />
-        <CourseCards />
+        <CourseCards upcomingOnly title waitlist/>
+
       </main>
     </div>
   );
