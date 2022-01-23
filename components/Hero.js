@@ -10,22 +10,21 @@ function Hero() {
           <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-teal-700 sm:text-5xl md:text-6xl">
-                A Redis Pro’s <br className="md:hidden" /> Best Kept Secret.
+                The Rust Pro’s <br /> Best Kept Secret.
               </h1>
               <p className="mt-3 max-w-md mx-auto text-lg font-semibold sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
-                Build your own Redis. Get crystal clear on how it works.{" "}
+                Build an advanced project. Attain Rust mastery.{" "}
                 <br className="hidden md:block"></br>
                 Become your team&apos;s resident performance expert.
               </p>
-              <div className="mt-12">
-                <PrimaryButton text="Start Learning →" />
+              <div className="mt-8">
+                <PrimaryButton text="Choose Project →" />
                 <span className="block text-teal-700 mt-2 text-sm">
                   100% free. No CC required.
                 </span>
               </div>
               <p className="italic text-lg max-w-xl mt-8 inline-block">
-                “Never in my life have I needed something so much and not known
-                until I received it.” —{" "}
+                “The Build your own Redis series was a refreshing way to pickup Rust. Plus I got to appreciate Redis internals for free” —{" "}
                 <span className="underline underline-offset-4">Reddit</span>
               </p>
             </div>
