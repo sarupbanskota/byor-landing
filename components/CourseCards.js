@@ -4,6 +4,14 @@ export { CourseCards };
 
 const upcomingCourses = [
   {
+    name: "Build your own Redis",
+    desc: "Master the inner workings of Git, and explain any complex scenario. ",
+    formattedDate: "Live Feb 22",
+    level: "Beginner",
+    theme: "red",
+    icon: "/icons/git-half.png",
+  },
+  {
     name: "Build your own Git",
     desc: "Master the inner workings of Git, and explain any complex scenario. ",
     formattedDate: "Live Feb 22",
@@ -15,7 +23,7 @@ const upcomingCourses = [
     name: "Build your own Docker",
     desc: "Dive deep into how Docker works, including the Registry API.",
     formattedDate: "Live Mar 22",
-    level: "Beginner",
+    level: "Intermediate",
     theme: "seablue",
     icon: "/icons/docker-half.png",
   },
@@ -33,13 +41,13 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-function CourseCards() {
+function CourseCards({title, waitlist}) {
   return (
     <div className="bg-white bg-opacity-25">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <p className="text-center text-xl font-normal mb-12">
+        {title && <p className="text-center text-xl font-normal mb-12">
           Sign up for our upcoming courses
-        </p>
+        </p>}
         <div className="flex gap-8 overflow-scroll flex-col md:flex-row items-center">
           {upcomingCourses.map((course) => (
             <a
@@ -98,7 +106,7 @@ function CourseCards() {
             </a>
           ))}
         </div>
-        <WaitlistForm />
+        {waitlist && <WaitlistForm />}
       </div>
     </div>
   );

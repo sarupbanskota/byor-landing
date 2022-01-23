@@ -1,3 +1,4 @@
+import { CourseCards } from "./CourseCards";
 import { LogoCloud } from "./LogoCloud";
 import { PrimaryButton } from "./PrimaryButton";
 export { Hero };
@@ -13,20 +14,20 @@ function Hero() {
                 The Rust Pro’s <br /> Best Kept Secret.
               </h1>
               <p className="mt-3 max-w-md mx-auto text-lg font-semibold sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
-                Build an advanced project. Attain Rust mastery.{" "}
+                Build a real project. Attain Rust mastery.{" "}
                 <br className="hidden md:block"></br>
-                Become your team&apos;s resident performance expert.
+                Be your team&apos;s resident performance expert.
               </p>
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <PrimaryButton text="Choose Project →" />
                 <span className="block text-teal-700 mt-2 text-sm">
                   100% free. No CC required.
                 </span>
-              </div>
-              <p className="italic text-lg max-w-xl mt-8 inline-block">
+              </div> */}
+              {/* <p className="italic text-lg max-w-xl mt-8 inline-block">
                 “The Build your own Redis series was a refreshing way to pickup Rust. Plus I got to appreciate Redis internals for free” —{" "}
                 <span className="underline underline-offset-4">Reddit</span>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -36,13 +37,14 @@ function Hero() {
             <div className="flex-1" />
             <div className="flex-1 w-full bg-gray-900" />
           </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <CourseCards/>
+          {/* <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <img
               className="relative"
               src="/icons/app-screenshot.png"
               alt="App screenshot"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <LogoCloud />
