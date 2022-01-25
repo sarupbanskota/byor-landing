@@ -1,29 +1,28 @@
 export { FooterNavigation };
 
 const navigation = {
-  Languages: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
-  ],
-  Challenges: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+  Courses: [
+    { name: "Build Your Own Redis", href: "#" },
+    { name: "Build Your Own Docker", href: "#" },
+    { name: "Build Your Own Git", href: "#" },
+    { name: "Build Your Own SQLite", href: "#" },
   ],
   Resources: [
+    { name: "Help", href: "https://docs.codecrafters.io/" },
+    { name: "Status", href: "https://status.codecrafters.io/" },
+    { name: "Twitter", href: "https://twitter.com/codecraftersio" },
+    { name: "Job Board", href: "#" },
+  ],
+  Company: [
     { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Bulk Licenses", href: "#" },
+    { name: "Partnerships", href: "#" },
+    { name: "Investors", href: "#" },
+    { name: "Careers", href: "#" },
   ],
   Legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "Terms", href: "https://codecrafters.io/terms" },    
+    { name: "Privacy", href: "https://codecrafters.io/privacy" },
   ],
 };
 
@@ -33,13 +32,14 @@ function FooterNavigation() {
       <div className="md:grid md:grid-cols-2 md:gap-8">
         <div>
           <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-            Languages
+            Courses
           </h3>
           <ul role="list" className="mt-4 space-y-4">
-            {navigation.Languages.map((item) => (
+            {navigation.Courses.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
+                  target="_blank"
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
@@ -50,13 +50,14 @@ function FooterNavigation() {
         </div>
         <div className="mt-12 md:mt-0">
           <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-            Challenges
+            Resources
           </h3>
           <ul role="list" className="mt-4 space-y-4">
-            {navigation.Challenges.map((item) => (
+            {navigation.Resources.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
+                  target="_blank"
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
@@ -69,13 +70,14 @@ function FooterNavigation() {
       <div className="md:grid md:grid-cols-2 md:gap-8">
         <div>
           <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-            Resources
+            Company
           </h3>
           <ul role="list" className="mt-4 space-y-4">
-            {navigation.Resources.map((item) => (
+            {navigation.Company.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
+                  target="_blank"
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
@@ -93,6 +95,7 @@ function FooterNavigation() {
               <li key={item.name}>
                 <a
                   href={item.href}
+                  target="_blank"
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
