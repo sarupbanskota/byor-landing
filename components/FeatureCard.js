@@ -4,18 +4,18 @@ export { FeatureCard };
 const features = [
   {
     icon: "/icons/calendar.svg",
-    name: "Familiar, Real Projects.",
-    desc: "Redis pro, in one week. Unlock a new stage every day, and continue making progress.",
+    name: <>Real Projects. <br/>Just Enough Guidance.</>,
+    desc: "Recreate your favorite tools, your own style. A refreshing approach to language mastery.",
   },
   {
     icon: "/icons/GoPythonRust-updated.svg",
-    name: "On Your Own Machine.",
-    desc: "Want to pick up Rust? Go? Python? We’re biased, but this is the best way.",
+    name: <>On Your Own Machine.<br/>With Your Own Setup.</>,
+    desc: "Work within your favorite local editor and terminal, with your favorite extensions.",
   },
   {
     icon: "/icons/discord.svg",
-    name: "The best community.",
-    desc: "We’re passionate about this stuff and literally never sleep. You won’t be stuck.",
+    name: <>The Best Community.<br/>Inspiration Abound.</>,
+    desc: "Keep discovering new approaches from a community passionate about this stuff.",
   },
   ,
 ];
