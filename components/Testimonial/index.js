@@ -9,14 +9,14 @@ function Testimonial() {
     <div>
       <div className="flex flex-col items-center max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-teal-700 sm:text-4xl">
-          Join the top 1% of Redis pros
+          For the Joy of Programming 
         </h2>
         <p className="mt-4 text-lg leading-6 text-black max-w-lg">
-          Our learners are constantly telling us how the Build your own X
-          concept keeps their curiosity fueled, and confidence growing.
+          Our learners constantly tell us how the Build your own X
+          concept keeps their curiosity fueled, while stretching their abilities.
         </p>
         <TestimonialCard />
-        <PrimaryButton text="Start Learning →" />
+        <PrimaryButton text="Make today count →" />
         <div className="inline-flex mt-4 gap-2 items-center">
           <StackedAvatars />{" "}
           <p className="text-teal-700 text-sm">Read more testimonials </p>
