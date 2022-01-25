@@ -17,10 +17,12 @@ function Testimonial() {
         </p>
         <TestimonialCard />
         <PrimaryButton text="Make today count →" />
-        <div className="inline-flex mt-4 gap-2 items-center">
-          <StackedAvatars />{" "}
-          <p className="text-teal-700 text-sm">Read more testimonials </p>
-        </div>
+        <a href="https://codecrafters.io/testimonials" target="_blank" rel="noreferrer">
+          <div className="inline-flex mt-4 gap-2 items-center">
+            <StackedAvatars />{" "}
+            <p className="text-teal-700 text-sm">Read more testimonials </p>
+          </div>
+        </a>
       </div>
     </div>
   );
