@@ -9,13 +9,13 @@ function Stats({ attempts, level }) {
             {" "}
             <img src="/icons/Target.svg" width={38} height={38} alt="target" />
           </div>
-          <p>334 Attempts</p>
+          <p>11000+ Attempts (and counting)</p>
         </div>
-        <div>
+        {/* <div>
           <span className="bg-teal-700 rounded-sm text-white px-2 py-1">
             Intermediate
           </span>
-        </div>
+        </div> */}
       </div>
       <div className="inline-block mt-8 bg-white p-6 border border-teal-600 text-center md:text-left">
         <p className="text-sm md:text-base lg:text-lg">

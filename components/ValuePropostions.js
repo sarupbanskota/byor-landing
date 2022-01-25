@@ -5,15 +5,15 @@ export { ValuePropositions };
 const values = [
   {
     id: 1,
-    desc: "You’re well-versed with using Redis or a similar key-value database product",
+    desc: "You're an experienced programmer, and are looking to pickup or master Rust.",
   },
   {
     id: 2,
-    desc: "You're curious about how Redis works internally, and how it stores data",
+    desc: "You're curious about how your favorite technologies you use, work internally.",
   },
   {
     id: 3,
-    desc: "You work with an infrastructure team and use Redis as part of your job",
+    desc: "You're looking for a self-paced, minimal guidance approach (vs hand-holding).",
   },
 ];
 
