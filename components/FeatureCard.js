@@ -5,7 +5,7 @@ const features = [
   {
     icon: "/icons/calendar.svg",
     name: <>Real Projects. <br/>Just Enough Guidance.</>,
-    desc: "Recreate your favorite tools, your own style. A refreshing approach to language mastery.",
+    desc: "Recreate your favorite tools, in your own way. A fresh approach to language mastery.",
   },
   {
     icon: "/icons/GoPythonRust-updated.svg",
