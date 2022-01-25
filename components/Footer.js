@@ -5,11 +5,11 @@ export { Footer };
 
 function Footer() {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="bg-gray-50" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-48">
         <div className="xl:grid xl:gap-8">
           <div className="grid grid-cols-2 gap-8">
             <FooterNavigation />

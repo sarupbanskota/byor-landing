@@ -10,15 +10,12 @@ const navigation = {
   Resources: [
     { name: "Help", href: "https://docs.codecrafters.io/" },
     { name: "Status", href: "https://status.codecrafters.io/" },
-    { name: "Twitter", href: "https://twitter.com/codecraftersio" },
     { name: "Job Board", href: "#" },
   ],
   Company: [
     { name: "About", href: "#" },
-    { name: "Bulk Licenses", href: "#" },
-    { name: "Partnerships", href: "#" },
     { name: "Investors", href: "#" },
-    { name: "Careers", href: "#" },
+    { name: "Bulk Licenses", href: "#" },
   ],
   Legal: [
     { name: "Terms", href: "https://codecrafters.io/terms" },    
@@ -30,7 +27,7 @@ function FooterNavigation() {
   return (
     <>
       <div className="md:grid md:grid-cols-2 md:gap-8">
-        <div>
+        <div className="text-left">
           <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
             Courses
           </h3>
@@ -49,7 +46,7 @@ function FooterNavigation() {
             ))}
           </ul>
         </div>
-        <div className="mt-12 md:mt-0">
+        <div className="mt-12 md:mt-0 md:text-center">
           <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
             Resources
           </h3>
@@ -69,7 +66,7 @@ function FooterNavigation() {
           </ul>
         </div>
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-8">
+      <div className="md:grid md:grid-cols-2 md:gap-8 md:text-center">
         <div>
           <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
             Company
@@ -89,7 +86,7 @@ function FooterNavigation() {
             ))}
           </ul>
         </div>
-        <div className="mt-12 md:mt-0">
+        <div className="mt-12 md:mt-0 md:text-right">
           <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
             Legal
           </h3>

@@ -28,22 +28,28 @@ const social = [
 function FooterBottom() {
   return (
     // create a component with logo and text in a flex container
-    <div className="mt-12">
-      <div className="flex lg:items-start items-center gap-4 flex-col lg:flex-row">
+    <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-4">
+      <div className="flex items-center gap-4 flex-col lg:flex-row">
         <img
           src="/icons/logos/CodeCrafters.png"
           alt="logo"
           className="w-12 h-12"
         />
-        <p className="text-gray-500 text-xs font-bold text-center lg:text-left">
-          CodeCrafters. <br />
+        <p className="text-gray-500 text-xs font-bold">
+          CodeCrafters <br/>
           <span className="font-normal">
-            Programming challenges for seasoned developers.
+            Projects for hackers.
           </span>
         </p>
       </div>
-      <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row items-center justify-between pb-0">
-        <div className="flex justify-center space-x-6 md:order-2 text-xs">
+        <div className="mt-8 md:mt-0 flex flex-col items-center">
+
+        <p className="text-center text-base text-gray-400">
+            © 2022 Educode Limited. <br/>All rights reserved.
+          </p>
+        </div>
+
+        <div className="flex justify-center space-x-6 text-xs">
           {social.map((item) => (
             <a
               key={item.name}
@@ -57,25 +63,6 @@ function FooterBottom() {
             </a>
           ))}
         </div>
-        <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-center text-base text-gray-400">
-            © 2022 Educode Limited. All rights reserved.
-          </p>
-        </div>
-        <div className="md:order-3 border border-gray-100 px-3 py-1.5 rounded-md inline-flex gap-2 mt-10 md:mt-0">
-          Status{" "}
-          <span className="inline-flex items-center  text-sm font-medium text-indigo-800">
-            <svg
-              className="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400"
-              fill="currentColor"
-              viewBox="0 0 8 8"
-            >
-              <circle cx={4} cy={4} r={3} />
-            </svg>
-            All systems normal
-          </span>
-        </div>
-      </div>
     </div>
   );
 }
