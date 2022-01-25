@@ -3,12 +3,12 @@ export { FeatureCard };
 
 const features = [
   {
-    icon: "/icons/calendar.svg",
+    icon: "/icons/github.svg",
     name: <>Real Projects. <br/>Just Enough Guidance.</>,
     desc: "Recreate your favorite tools, in your own way. A fresh approach to language mastery.",
   },
   {
-    icon: "/icons/GoPythonRust-updated.svg",
+    icon: "/icons/logos/iterm2.png",
     name: <>On Your Own Machine.<br/>With Your Own Setup.</>,
     desc: "Work within your favorite local editor and terminal, with your favorite extensions.",
   },
