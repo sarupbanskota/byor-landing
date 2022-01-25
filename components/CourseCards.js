@@ -1,5 +1,3 @@
-import { WaitlistForm } from "./WaitlistForm";
-
 export { CourseCards };
 
 const courses = [
@@ -36,32 +34,51 @@ const courses = [
     icon: "/icons/git-half.png",
   },
   {
-    name: "Build your own React",
+    name: "Build your own Regex Parser",
+    upcoming: true,
     desc: "Master the inner workings of Git, and explain any complex scenario. ",
     formattedDate: "Live Feb 22",
-    level: "Beginner",
-    theme: "red",
+    level: "Advanced",
+    theme: "orange",
     icon: "/icons/git-half.png",
-    upcoming: true
   },
   {
-    name: "Build your own BitTorrent Client",
+    name: "Build your own HTTP Server",
+    upcoming: true,
+    desc: "Dive deep into how Docker works, including the Registry API.",
+    formattedDate: "Live Mar 22",
+    level: "Intermediate",
+    theme: "seablue",
+    icon: "/icons/docker-half.png",
+  },
+  {
+    name: "Build your own Shell",
+    upcoming: true,
+    desc: "Gain a solid understanding of SQL’sfile format and indexing.",
+    formattedDate: "Live Mar 22",
+    level: "Advanced",
+    theme: "darkblue",
+    icon: "/icons/sqlite-half.png",
+  },
+  {
+    name: "Build your own BitTorrent client",
+    upcoming: true,
     desc: "Master the inner workings of Git, and explain any complex scenario. ",
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
     icon: "/icons/git-half.png",
-    upcoming: true
   },
   {
     name: "Build your own Blockchain",
+    upcoming: true,
     desc: "Master the inner workings of Git, and explain any complex scenario. ",
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
     icon: "/icons/git-half.png",
     upcoming: true
-  },  
+  },
 ];
 
 function classNames(...classes) {
@@ -72,8 +89,8 @@ function CourseCards({title, waitlist, upcomingOnly}) {
   return (
     <div className="bg-white bg-opacity-25">
       <div className="max-w-7xl mx-auto pb-16 px-4 sm:pb-24 sm:px-6 lg:px-8">
-        {title && <p className="text-center text-xl font-normal mb-12">
-          Join — or contribute in our upcoming challenges
+        {title && <p className="text-center text-xl font-normal mb-12 mt-12">
+          Vote for an upcoming course, and get automatic early access
         </p>}
         <div className="flex gap-8 overflow-scroll flex-col md:flex-row items-center">
           {courses.filter(c => upcomingOnly ? c.upcoming : !c.upcoming).map((course) => (
@@ -107,7 +124,7 @@ function CourseCards({title, waitlist, upcomingOnly}) {
                       "flex-grow inline-flex justify-center rounded-sm border border-transparent shadow-sm px-2 py-1 md:px-4 md:py-2 text-white text-lg md:text-xl font-black"
                     )}
                   >
-                    Try {course.level} →
+                    {course.upcoming ? "Vote" : <span>Try {course.level} →</span>}
                   </div>
                   <span
                     className={classNames(
@@ -133,7 +150,6 @@ function CourseCards({title, waitlist, upcomingOnly}) {
             </a>
           ))}
         </div>
-        {waitlist && <WaitlistForm />}
       </div>
     </div>
   );
