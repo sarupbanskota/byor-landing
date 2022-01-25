@@ -49,6 +49,7 @@ function FooterBottom() {
               key={item.name}
               href={item.href}
               target="_blank"
+              rel="noreferrer"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
@@ -58,7 +59,7 @@ function FooterBottom() {
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-gray-400">
-            &copy; © 2022 Educode Limited. All rights reserved.
+            © 2022 Educode Limited. All rights reserved.
           </p>
         </div>
         <div className="md:order-3 border border-gray-100 px-3 py-1.5 rounded-md inline-flex gap-2 mt-10 md:mt-0">

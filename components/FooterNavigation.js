@@ -40,6 +40,7 @@ function FooterNavigation() {
                 <a
                   href={item.href}
                   target="_blank"
+                  rel="noreferrer"
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
@@ -58,6 +59,7 @@ function FooterNavigation() {
                 <a
                   href={item.href}
                   target="_blank"
+                  rel="noreferrer"
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
@@ -78,6 +80,7 @@ function FooterNavigation() {
                 <a
                   href={item.href}
                   target="_blank"
+                  rel="noreferrer"
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
@@ -96,6 +99,7 @@ function FooterNavigation() {
                 <a
                   href={item.href}
                   target="_blank"
+                  rel="noreferrer"
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
