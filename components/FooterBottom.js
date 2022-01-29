@@ -28,8 +28,9 @@ const social = [
 function FooterBottom() {
   return (
     // create a component with logo and text in a flex container
+    <>
     <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-4">
-      <div className="flex items-center gap-4 flex-col lg:flex-row">
+      <div className="flex items-center gap-4 flex-col lg:flex-row text-center md:text-left">
         <img
           src="/for/icons/logos/CodeCrafters.png"
           alt="logo"
@@ -42,27 +43,29 @@ function FooterBottom() {
           </span>
         </p>
       </div>
-        <div className="mt-8 md:mt-0 flex flex-col items-center">
-
-        <p className="text-center text-base text-gray-400">
-            © 2022 Educode Limited. <br/>All rights reserved.
-          </p>
-        </div>
-
-        <div className="flex justify-center space-x-6 text-xs">
-          {social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
-              className="text-gray-400 hover:text-gray-500"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
-        </div>
+      <div className="flex justify-center space-x-6 text-xs">
+        {social.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-400 hover:text-gray-500"
+          >
+            <span className="sr-only">{item.name}</span>
+            <item.icon className="h-6 w-6" aria-hidden="true" />
+          </a>
+        ))}
+      </div>
     </div>
+    <div>
+      <div className="mt-8 md:mt-0 flex flex-col items-center">
+
+<p className="text-center text-base text-gray-400">
+    © 2022 Educode Limited. <br/>All rights reserved.
+  </p>
+</div>
+    </div>
+    </>
   );
 }
