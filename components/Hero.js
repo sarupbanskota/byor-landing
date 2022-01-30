@@ -16,7 +16,7 @@ function Hero() {
               <p className="mt-3 max-w-md mx-auto text-lg font-semibold sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
                 Build a real project. Attain Rust mastery.{" "}
                 <br className="hidden md:block"></br>
-                Become your team&apos;s resident perf expert.
+                Become your team&apos;s performance expert.
               </p>
               {/* <div className="mt-8">
                 <PrimaryButton text="Choose Project →" />
