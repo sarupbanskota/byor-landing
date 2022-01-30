@@ -16,7 +16,7 @@ function Testimonial() {
           concept keeps their curiosity fueled, while stretching their abilities.
         </p>
         <TestimonialCard />
-        <PrimaryButton text="Make today count →" />
+        <PrimaryButton text="Make today count →" color="teal" />
         <a href="https://codecrafters.io/testimonials" target="_blank" rel="noreferrer">
           <div className="inline-flex mt-4 gap-2 items-center">
             <StackedAvatars />{" "}
