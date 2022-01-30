@@ -7,7 +7,7 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Advanced",
     theme: "orange",
-    icon: "/icons/git-half.png",
+    icon: "/for/icons/git-half.png",
   },
   {
     name: "Build your own Docker",
@@ -15,7 +15,7 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Intermediate",
     theme: "seablue",
-    icon: "/icons/docker-half.png",
+    icon: "/for/icons/docker-half.png",
   },
   {
     name: "Build your own SQLite",
@@ -23,7 +23,7 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Advanced",
     theme: "darkblue",
-    icon: "/icons/sqlite-half.png",
+    icon: "/for/icons/sqlite-half.png",
   },
   {
     name: "Build your own Redis",
@@ -31,7 +31,7 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
-    icon: "/icons/git-half.png",
+    icon: "/for/icons/git-half.png",
   },
   {
     name: "Build your own Regex Parser",
@@ -40,7 +40,7 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Advanced",
     theme: "orange",
-    icon: "/icons/git-half.png",
+    icon: "/for/icons/git-half.png",
   },
   {
     name: "Build your own HTTP Server",
@@ -49,7 +49,7 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Intermediate",
     theme: "seablue",
-    icon: "/icons/docker-half.png",
+    icon: "/for/icons/docker-half.png",
   },
   {
     name: "Build your own Shell",
@@ -58,7 +58,7 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Advanced",
     theme: "darkblue",
-    icon: "/icons/sqlite-half.png",
+    icon: "/for/icons/sqlite-half.png",
   },
   {
     name: "Build your own BitTorrent client",
@@ -67,7 +67,7 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
-    icon: "/icons/git-half.png",
+    icon: "/for/icons/git-half.png",
   },
   {
     name: "Build your own Blockchain",
@@ -76,7 +76,7 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
-    icon: "/icons/git-half.png",
+    icon: "/for/icons/git-half.png",
     upcoming: true
   },
 ];

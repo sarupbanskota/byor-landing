@@ -7,7 +7,7 @@ function Stats({ attempts, level }) {
         <div className="flex gap-4 items-center flex-col md:flex-row">
           <div>
             {" "}
-            <img src="/icons/Target.svg" width={38} height={38} alt="target" />
+            <img src="/for/icons/Target.svg" width={38} height={38} alt="target" />
           </div>
           <p>11000+ Attempts (and counting)</p>
         </div>

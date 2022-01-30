@@ -34,7 +34,7 @@ function ValuePropositions() {
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md  text-white">
                         <img
                           className="rounded-full w-6 md:w-12 h-10 md:h-10"
-                          src="/icons/check.svg"
+                          src="/for/icons/check.svg"
                           alt=""
                         />
                       </div>

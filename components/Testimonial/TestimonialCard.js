@@ -8,13 +8,13 @@ function TestimonialCard() {
           <span className="inline-block relative">
             <img
               className="rounded-full bg-gradient-to-br from-red-100"
-              src="/icons/avatar-charles-guo.png"
+              src="/for/icons/avatar-charles-guo.png"
               alt=""
             />
             <span className="absolute top-[9px] right-[-9px] block h-6 w-6 rounded-full ">
               <img
                 className="rounded-full"
-                src="/icons/logos/redis.svg"
+                src="/for/icons/logos/redis.svg"
                 alt=""
               />
             </span>
