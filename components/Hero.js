@@ -16,7 +16,7 @@ function Hero() {
               <p className="mt-3 max-w-md mx-auto text-lg font-semibold sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
                 Build a real project. Attain Rust mastery.{" "}
                 <br className="hidden md:block"></br>
-                Become your team&apos;s performance expert.
+                Become your team’s performance expert.
               </p>
               {/* <div className="mt-8">
                 <PrimaryButton text="Choose Project →" />
@@ -25,7 +25,7 @@ function Hero() {
                 </span>
               </div> */}
               <p className="italic text-lg max-w-xl mt-8 inline-block">
-                "There's literally no better way to master Rust." <br/>
+              “There’s literally no better way to master Rust.” <br/>
                 <span className="text-sm">— Pranjal Paliwal, $35k winner of <a href="https://hackatom.org/" target="_blank" rel="noreferrer" className="underline underline-offset-4">HackAtom 2021</a></span>
               </p>
             </div>
