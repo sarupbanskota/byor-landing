@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
-        <title>Master Rust with real projects</title>
+        <title>Master Rust with Real Projects</title>
         <link rel="icon" href="/for/favicon.ico" />
       </Head>
       <main className="w-full">

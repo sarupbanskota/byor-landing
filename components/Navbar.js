@@ -19,25 +19,25 @@ const courses = [
   {
     name: 'Build Your Own Redis',
     description: 'Master the inner workings of Git, and explain any complex scenario. ',
-    href: '#',
+    href: 'https://codecrafters.io/challenges/redis',
     icon: ChartBarIcon,
   },
   {
     name: 'Build Your Own Docker',
     description: 'Dive deep into how Docker works, including the Registry API.',
-    href: '#',
+    href: 'https://codecrafters.io/challenges/docker',
     icon: CursorClickIcon,
   },
   {
     name: 'Build Your Own Git',
     description: "Master the inner workings of Git, and explain any complex scenario. ",
-    href: '#',
+    href: 'https://codecrafters.io/challenges/git',
     icon: ViewGridIcon,
   },
   {
     name: 'Build Your Own SQLite',
     description: 'Gain a solid understanding of SQL’sfile format and indexing.',
-    href: '#',
+    href: 'https://codecrafters.io/challenges/sqlite',
     icon: RefreshIcon,
   }
 ]
@@ -61,13 +61,14 @@ function Navbar() {
     <Popover className="relative bg-white">
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-start lg:w-0 lg:flex-1">
-          <a href="#">
-            <span className="sr-only">Code Crafters Logo</span>
+          <a href="/" className="flex">
+            <span className="sr-only">CodeCrafters Logo</span>
             <img
-              className="h-8 w-auto sm:h-10"
-              src="/icons/CodeCrafters.png"
+              className="h-6 w-auto mr-2"
+              src="/for/icons/CodeCrafters.png"
               alt=""
             />
+            CodeCrafters
           </a>
         </div>
         <div className="-mr-2 -my-2 md:hidden">
@@ -77,20 +78,28 @@ function Navbar() {
           </Popover.Button>
         </div>
         <Popover.Group as="nav" className="hidden md:flex space-x-10">
+
+          <a href="https://discord.com/invite/DeqUD2P" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            Discord
+          </a>
+          <a href="https://codecrafters.io/testimonials" target="_blank" rel="noreferrer" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            Testimonials
+          </a>
+
           <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
                   className={classNames(
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group bg-white rounded-md inline-flex items-center text-lg font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500'
+                    'group bg-white rounded-md inline-flex items-center font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500'
                   )}
                 >
-                  <span>Courses</span>
+                  <span>All Courses</span>
                   <ChevronDownIcon
                     className={classNames(
                       open ? 'text-gray-600' : 'text-gray-400',
-                      'ml-2 h-5 w-5 group-hover:text-gray-500'
+                      'h-5 w-5 group-hover:text-gray-500'
                     )}
                     aria-hidden="true"
                   />
@@ -124,7 +133,7 @@ function Navbar() {
                           </a>
                         ))}
                       </div>
-                      <div className="p-5 bg-gray-50 sm:p-8">
+                      {/* <div className="p-5 bg-gray-50 sm:p-8">
                         <a href="#" className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
                           <div className="flex items-center">
                             <div className="text-base font-medium text-gray-900">Enterprise</div>
@@ -136,7 +145,7 @@ function Navbar() {
                             Empower your entire team with bulk licenses.
                           </p>
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </Popover.Panel>
                 </Transition>
@@ -144,14 +153,7 @@ function Navbar() {
             )}
           </Popover>
 
-          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            Pricing
-          </a>
-          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            Docs
-          </a>
-
-          <Popover className="relative">
+          {/* <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
@@ -198,11 +200,11 @@ function Navbar() {
                 </Transition>
               </>
             )}
-          </Popover>
+          </Popover> */}
         </Popover.Group>
-        <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <PrimaryButton text="Sign in" size="small" />
-        </div>
+        </div> */}
       </div>
 
       <Transition
@@ -219,11 +221,15 @@ function Navbar() {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="/icons/CodeCrafters.png"
-                    alt="Code Crafters Logo"
-                  />
+                <a href="/" className="flex">
+            <span className="sr-only">CodeCrafters Logo</span>
+            <img
+              className="h-6 w-auto mr-2"
+              src="/for/icons/CodeCrafters.png"
+              alt=""
+            />
+            CodeCrafters
+          </a>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
@@ -251,18 +257,15 @@ function Navbar() {
             </div>
             <div className="py-6 px-5">
               <div className="grid grid-cols-2 gap-4">
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricing
+                <a href="https://discord.gg/DeqUD2P" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  Discord
                 </a>
 
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
+                <a href="https://codecrafters.io/testimonials" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  Testimonials
                 </a>
 
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Enterprise
-                </a>
-                {resources.map((resource) => (
+                {/* {resources.map((resource) => (
                   <a
                     key={resources.name}
                     href={resource.href}
@@ -270,18 +273,18 @@ function Navbar() {
                   >
                     {resource.name}
                   </a>
-                ))}
+                ))} */}
               </div>
               <div className="mt-6 text-center">
 
                 {/* TODO: ADD W-FULL ON MOBILE FOR PRIMARYBUTTON, W-AUTO FROM MD: */}
-                <PrimaryButton text="Sign up" width="full" />
+                {/* <PrimaryButton text="Sign up" width="full" />
                 <p className="mt-6  text-base font-medium text-gray-500">
                   Existing customer?{' '}
                   <a href="#" className="text-cyan-600 hover:text-cyan-500">
                     Sign in
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

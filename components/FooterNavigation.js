@@ -2,20 +2,20 @@ export { FooterNavigation };
 
 const navigation = {
   Courses: [
-    { name: "Build Your Own Redis", href: "#" },
-    { name: "Build Your Own Docker", href: "#" },
-    { name: "Build Your Own Git", href: "#" },
-    { name: "Build Your Own SQLite", href: "#" },
+    { name: "Build Your Own Redis", href: "https://codecrafters.io/challenges/redis" },
+    { name: "Build Your Own Docker", href: "https://codecrafters.io/challenges/docker" },
+    { name: "Build Your Own Git", href: "https://codecrafters.io/challenges/git" },
+    { name: "Build Your Own SQLite", href: "https://codecrafters.io/challenges/sqlite" },
   ],
   Resources: [
     { name: "Help", href: "https://docs.codecrafters.io/" },
     { name: "Status", href: "https://status.codecrafters.io/" },
-    { name: "Job Board", href: "#" },
+    // { name: "Job Board", href: "#" },
   ],
   Company: [
-    { name: "About", href: "#" },
-    { name: "Investors", href: "#" },
-    { name: "Bulk Licenses", href: "#" },
+    { name: "About", href: "mailto:sarup@codecrafters.io" },
+    { name: "Investors", href: "mailto:sarup@codecrafters.io" },
+    { name: "Bulk Licenses", href: "mailto:sarup@codecrafters.io" },
   ],
   Legal: [
     { name: "Terms", href: "https://codecrafters.io/terms" },    
