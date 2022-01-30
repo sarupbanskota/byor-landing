@@ -32,7 +32,7 @@ function FooterBottom() {
     <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-4">
       <div className="flex items-center gap-4 flex-col lg:flex-row text-center md:text-left">
         <img
-          src="/icons/CodeCrafters.png"
+          src="/for/icons/CodeCrafters.png"
           alt="logo"
           className="w-12 h-12"
         />
