@@ -59,8 +59,8 @@ function classNames(...classes) {
 function Navbar() {
   return (
     <Popover className="relative bg-white">
-      <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
-        <div className="flex justify-start lg:w-0 lg:flex-1">
+      <div className="flex justify-center items-center px-4 py-6 sm:px-6 md:space-x-10">
+      <div className="flex justify-start self-start">
           <a href="/" className="flex">
             <span className="sr-only">CodeCrafters Logo</span>
             <img
@@ -77,16 +77,9 @@ function Navbar() {
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
         </div>
-        <Popover.Group as="nav" className="hidden md:flex space-x-10">
+        <Popover.Group as="nav" className="hidden md:flex items-center space-x-10">
 
-          <a href="https://discord.com/invite/DeqUD2P" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            Discord
-          </a>
-          <a href="https://codecrafters.io/testimonials" target="_blank" rel="noreferrer" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            Testimonials
-          </a>
-
-          <Popover className="relative">
+        <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
@@ -152,6 +145,12 @@ function Navbar() {
               </>
             )}
           </Popover>
+          <a href="https://codecrafters.io/testimonials" target="_blank" rel="noreferrer" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            Testimonials
+          </a>
+          <a href="https://discord.com/invite/DeqUD2P" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            Discord
+          </a>
 
           {/* <Popover className="relative">
             {({ open }) => (
