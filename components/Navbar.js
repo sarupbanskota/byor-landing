@@ -249,8 +249,12 @@ function Navbar() {
                       href={course.href}
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
-                      <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-cyan-600 to-cyan-800 text-white">
-                        <course.icon className="h-6 w-6" aria-hidden="true" />
+                      <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white">
+                      <img
+                        src={course.icon}
+                        alt="git icon"
+                        className=" h-32 object-contain"
+                      />
                       </div>
                       <div className="ml-4 text-base font-medium text-gray-900">{course.name}</div>
                     </a>
