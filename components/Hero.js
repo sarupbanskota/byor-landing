@@ -8,15 +8,15 @@ function Hero() {
     <div className="bg-gray-50">
       <div className="relative overflow-hidden">
         <div className="relative pt-6 pb-4 md:pb-16">
-          <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
+          <div className="mt-8 mx-auto max-w-7xl px-4 sm:mt-8 sm:px-6">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-teal-700 sm:text-5xl md:text-6xl">
                 The Rust Pro’s <br /> Best Kept Secret.
               </h1>
-              <p className="mt-3 max-w-md mx-auto text-lg font-semibold sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
-                Build a real project. Attain Rust mastery.{" "}
+              <p className="mt-3 max-w-md mx-auto text-lg sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
+                Build a real project. Achieve depth.{" "}
                 <br className="hidden md:block"></br>
-                Become your team’s performance expert.
+                Become your team’s Rust expert.
               </p>
               {/* <div className="mt-8">
                 <PrimaryButton text="Choose Project →" />
