@@ -14,7 +14,7 @@ function TestimonialCard() {
             <span className="absolute top-[9px] right-[-9px] block h-6 w-6 rounded-full ">
               <img
                 className="rounded-full"
-                src="/for/icons/logos/redis.svg"
+                src="/logo/redis.svg"
                 alt=""
               />
             </span>

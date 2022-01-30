@@ -65,7 +65,7 @@ function Navbar() {
             <span className="sr-only">Code Crafters Logo</span>
             <img
               className="h-8 w-auto sm:h-10"
-              src="/icons/logos/CodeCrafters.png"
+              src="/icons/CodeCrafters.png"
               alt=""
             />
           </a>
@@ -221,7 +221,7 @@ function Navbar() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="/icons/logos/CodeCrafters.png"
+                    src="/icons/CodeCrafters.png"
                     alt="Code Crafters Logo"
                   />
                 </div>
