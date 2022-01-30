@@ -3,17 +3,17 @@ export { FeatureCard };
 
 const features = [
   {
-    icon: "/logo/github.svg",
+    icon: "/for/logo/github.svg",
     name: <>Real Projects. <br/>Just Enough Guidance.</>,
     desc: "Recreate your favorite tools, in your own way. A fresh approach to language mastery.",
   },
   {
-    icon: "/logo/iterm2.png",
+    icon: "/for/logo/iterm2.png",
     name: <>On Your Own Machine.<br/>With Your Own Setup.</>,
     desc: "Work within your favorite local editor and terminal, with your favorite extensions.",
   },
   {
-    icon: "/logo/discord.svg",
+    icon: "/for/logo/discord.svg",
     name: <>The Best Community.<br/>Inspiration Abound.</>,
     desc: "Keep discovering new approaches from a community passionate about this stuff.",
   },

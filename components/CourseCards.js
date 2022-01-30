@@ -143,7 +143,7 @@ function CourseCards({title, waitlist, upcomingOnly}) {
                     {course.languages.length > 0 &&
                       course.languages.map((language) => (
                         <img
-                          src={`/icons/${language.toLowerCase()}.svg`}
+                          src={`/for/icons/${language.toLowerCase()}.svg`}
                           alt={language}  
                           className="h-5 w-5"
                           key={language}
