@@ -52,7 +52,7 @@ function ValuePropositions() {
             <div className="pl-4 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="icons/app-screenshot-2.png"
+                src="app-screenshot-2.png"
                 alt="Inbox user interface"
               />
             </div>

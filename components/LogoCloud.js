@@ -1,12 +1,12 @@
 export { LogoCloud };
 
 const logos = [
-  { name: "Uber", src: "/for/icons/logos/Uber.svg" },
-  { name: "Ionic Framework", src: "/for/icons/logos/ionic.svg" },
-  { name: "Stripe", src: "/for/icons/logos/stripe.svg" },
-  { name: "Amazon Web Services", src: "/for/icons/logos/aws.svg" },
-  { name: "Deliveroo", src: "/for/icons/logos/deliveroo.svg" },
-  { name: "JP Morgan Chase", src: "/for/icons/logos/jpm-chase.svg" },
+  { name: "Uber", src: "/logo/Uber.svg" },
+  { name: "Ionic Framework", src: "/logo/ionic.svg" },
+  { name: "Stripe", src: "/logo/stripe.svg" },
+  { name: "Amazon Web Services", src: "/logo/aws.svg" },
+  { name: "Deliveroo", src: "/logo/deliveroo.svg" },
+  { name: "JP Morgan Chase", src: "/logo/jpm-chase.svg" },
 ];
 
 function LogoCloud() {

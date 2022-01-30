@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export { CourseCards };
 
 const courses = [
@@ -7,7 +9,8 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Advanced",
     theme: "orange",
-    icon: "/for/icons/git-half.png",
+    icon: "logo/git-half.png",
+    languages: ["Python", "Ruby", "Go", "Rust", "Kotlin"],
   },
   {
     name: "Build your own Docker",
@@ -15,7 +18,8 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Intermediate",
     theme: "seablue",
-    icon: "/for/icons/docker-half.png",
+    icon: "logo/docker-half.png",
+    languages: ["Go", "Nim", "C", "PHP"]
   },
   {
     name: "Build your own SQLite",
@@ -23,7 +27,8 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Advanced",
     theme: "darkblue",
-    icon: "/for/icons/sqlite-half.png",
+    icon: "logo/sqlite-half.png",
+    languages:[]
   },
   {
     name: "Build your own Redis",
@@ -31,7 +36,8 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
-    icon: "/for/icons/git-half.png",
+    icon: "logo/git-half.png",
+    languages: ["Python", "Ruby", "Go", "Haskel", "Rust", "C", "Elixir"],
   },
   {
     name: "Build your own Regex Parser",
@@ -40,7 +46,8 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Advanced",
     theme: "orange",
-    icon: "/for/icons/git-half.png",
+    icon: "logo/git-half.png",
+    languages:[]
   },
   {
     name: "Build your own HTTP Server",
@@ -49,7 +56,8 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Intermediate",
     theme: "seablue",
-    icon: "/for/icons/docker-half.png",
+    icon: "logo/docker-half.png",
+    languages:[]
   },
   {
     name: "Build your own Shell",
@@ -58,7 +66,8 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Advanced",
     theme: "darkblue",
-    icon: "/for/icons/sqlite-half.png",
+    icon: "logo/sqlite-half.png",
+    languages:[]
   },
   {
     name: "Build your own BitTorrent client",
@@ -67,7 +76,8 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
-    icon: "/for/icons/git-half.png",
+    icon: "logo/git-half.png",
+    languages:[]
   },
   {
     name: "Build your own Blockchain",
@@ -76,8 +86,8 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
-    icon: "/for/icons/git-half.png",
-    upcoming: true
+    icon: "logo/git-half.png",
+    languages:[]
   },
 ];
 
@@ -114,7 +124,7 @@ function CourseCards({title, waitlist, upcomingOnly}) {
                   </div>
                 </div>
                 <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-start gap-4">
-                  <a href="https://vote.codecrafters.io" target="_blank" rel="noreferrer">
+                  <motion.a href="https://vote.codecrafters.io" target="_blank" rel="noreferrer" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
                   <div
                     className={classNames(
                       course.theme === "orange"
@@ -127,18 +137,19 @@ function CourseCards({title, waitlist, upcomingOnly}) {
                   >
                     {course.upcoming ? "Vote" : <span>Try {course.level} →</span>}
                   </div>
-                  </a>
-                  <span
-                    className={classNames(
-                      course.theme === "orange"
-                        ? "text-[#F05033]"
-                        : course.theme === "seablue"
-                        ? "text-blue-500"
-                        : "text-sky-900",
-                      "flex-grow inline justify-center bg-white text-xl font-medium sm:mt-0"
-                    )}
-                  >
-                    {course.formattedDate}
+                  </motion.a>
+                  <span className="flex gap-2">
+                    {/* if course.languages array is not empty, loop through the array and create an image tag with src attribute equals course.languages prepended with the word "icon" */}
+                    {course.languages.length > 0 &&
+                      course.languages.map((language) => (
+                        <img
+                          src={`/icons/icon-${language.toLowerCase()}.png`}
+                          alt={language}  
+                          className="h-4 w-4"
+                          key={language}
+                          title={language}
+                        />
+                      ))}
                   </span>
                 </div>
               </div>

@@ -8,7 +8,7 @@ function TestimonialCard() {
           <span className="inline-block relative">
             <img
               className="rounded-full bg-gradient-to-br from-red-100"
-              src="/for/icons/avatar-charles-guo.png"
+              src="/avatar-charles-guo.png"
               alt=""
             />
             <span className="absolute top-[9px] right-[-9px] block h-6 w-6 rounded-full ">

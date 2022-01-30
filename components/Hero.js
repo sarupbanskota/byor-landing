@@ -41,7 +41,7 @@ function Hero() {
           {/* <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <img
               className="relative"
-              src="/icons/app-screenshot.png"
+              src="/app-screenshot.png"
               alt="App screenshot"
             />
           </div> */}
