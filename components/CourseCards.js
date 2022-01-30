@@ -37,7 +37,7 @@ const courses = [
     level: "Beginner",
     theme: "red",
     icon: "logo/git-half.png",
-    languages: ["Python", "Ruby", "Go", "Haskel", "Rust", "C", "Elixir"],
+    languages: ["Python", "Ruby", "Go", "Haskell", "Rust", "C", "Elixir"],
   },
   {
     name: "Build your own Regex Parser",
@@ -143,9 +143,9 @@ function CourseCards({title, waitlist, upcomingOnly}) {
                     {course.languages.length > 0 &&
                       course.languages.map((language) => (
                         <img
-                          src={`/icons/icon-${language.toLowerCase()}.png`}
+                          src={`/icons/${language.toLowerCase()}.svg`}
                           alt={language}  
-                          className="h-4 w-4"
+                          className="h-5 w-5"
                           key={language}
                           title={language}
                         />
