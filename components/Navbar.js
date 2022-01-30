@@ -20,25 +20,25 @@ const courses = [
     name: 'Build Your Own Redis',
     description: 'Master the inner workings of Git, and explain any complex scenario. ',
     href: 'https://codecrafters.io/challenges/redis',
-    icon: ChartBarIcon,
+    icon: "logo/git-half.png",
   },
   {
     name: 'Build Your Own Docker',
     description: 'Dive deep into how Docker works, including the Registry API.',
     href: 'https://codecrafters.io/challenges/docker',
-    icon: CursorClickIcon,
+    icon: "logo/docker-half.png",
   },
   {
     name: 'Build Your Own Git',
     description: "Master the inner workings of Git, and explain any complex scenario. ",
     href: 'https://codecrafters.io/challenges/git',
-    icon: ViewGridIcon,
+    icon: "logo/git-half.png",
   },
   {
     name: 'Build Your Own SQLite',
     description: 'Gain a solid understanding of SQL’sfile format and indexing.',
     href: 'https://codecrafters.io/challenges/sqlite',
-    icon: RefreshIcon,
+    icon: "logo/sqlite-half.png",
   }
 ]
 const resources = [
@@ -116,8 +116,12 @@ function Navbar() {
                             href={course.href}
                             className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                           >
-                            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-cyan-600 to-cyan-800 text-white sm:h-12 sm:w-12">
-                              <course.icon className="h-6 w-6" aria-hidden="true" />
+                            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white sm:h-12 sm:w-12">
+                            <img
+                              src={course.icon}
+                              alt="git icon"
+                              className=" h-32 object-contain"
+                            />
                             </div>
                             <div className="ml-4">
                               <p className="text-base font-medium text-gray-900">{course.name}</p>
