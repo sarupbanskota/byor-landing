@@ -4,20 +4,20 @@ function Stats({ attempts, level }) {
   return (
     <div className="text-2xl font-bold mt-6 py-6 md:py-8 flex flex-col items-center w-full md:items-start">
       <div className="flex items-center gap-8 flex-col md:flex-row">
-        <div className="flex gap-4 items-center flex-col md:flex-row">
+        {/* <div className="flex gap-4 items-center flex-col md:flex-row">
           <div>
             {" "}
             <img src="/for/icons/Target.svg" width={38} height={38} alt="target" />
           </div>
           <p>11000+ Attempts (and counting)</p>
-        </div>
+        </div> */}
         {/* <div>
           <span className="bg-teal-700 rounded-sm text-white px-2 py-1">
             Intermediate
           </span>
         </div> */}
       </div>
-      <div className="inline-block mt-8 bg-white p-6 border border-teal-600 text-center md:text-left">
+      {/* <div className="inline-block mt-8 bg-white p-6 border border-teal-600 text-center md:text-left">
         <p className="text-sm md:text-base lg:text-lg">
           <span>
             <svg
@@ -31,7 +31,7 @@ function Stats({ attempts, level }) {
           </span>{" "}
           <span className="font-normal">completed Stage 3</span>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

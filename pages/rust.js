@@ -23,7 +23,7 @@ export default function Home() {
         <FeatureCard />
         <Testimonial />
         <ValuePropositions />
-        <CourseCards upcomingOnly title waitlist/>
+        {/* <CourseCards upcomingOnly title waitlist/> */}
 
       </main>
     </div>
