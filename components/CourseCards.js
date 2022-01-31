@@ -36,7 +36,7 @@ const courses = [
   {
     key: 'sqlite',
     name: "Build your own SQLite",
-    desc: "Gain a solid understanding of SQL’sfile format and indexing.",
+    desc: "Gain a solid understanding of SQL’s file format and indexing.",
     formattedDate: "Live Mar 22",
     level: "Advanced",
     theme: "darkblue",

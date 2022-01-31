@@ -36,7 +36,7 @@ const courses = [
   },
   {
     name: 'Build Your Own SQLite',
-    description: 'Gain a solid understanding of SQL’sfile format and indexing.',
+    description: 'Gain a solid understanding of SQL’s file format and indexing.',
     href: 'https://codecrafters.io/challenges/sqlite',
     icon: "logo/sqlite-half.png",
   }
