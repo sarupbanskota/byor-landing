@@ -24,6 +24,16 @@ const courses = [
     languages: ["Rust", "Go", "C", "PHP", "Nim" ]
   },
   {
+    key: 'redis',
+    name: "Build your own Redis",
+    desc: "Master the inner workings of Git, and explain any complex scenario. ",
+    formattedDate: "Live Feb 22",
+    level: "Beginner",
+    theme: "red",
+    icon: "logo/redis-half.png",
+    languages: ["Rust", "Ruby",  "Elixir", "Haskell", "Go", "Python", "C"],
+  },
+  {
     key: 'sqlite',
     name: "Build your own SQLite",
     desc: "Gain a solid understanding of SQL’sfile format and indexing.",
@@ -32,16 +42,6 @@ const courses = [
     theme: "darkblue",
     icon: "logo/sqlite-half.png",
     languages: ["Rust", "Go", "Python", "Ruby"],
-  },
-  {
-    key: 'redis',
-    name: "Build your own Redis",
-    desc: "Master the inner workings of Git, and explain any complex scenario. ",
-    formattedDate: "Live Feb 22",
-    level: "Beginner",
-    theme: "red",
-    icon: "logo/git-half.png",
-    languages: ["Rust", "Ruby",  "Elixir", "Haskell", "Go", "Python", "C"],
   },
   {
     name: "Build your own Regex Parser",
@@ -135,6 +135,8 @@ function CourseCards({title, waitlist, upcomingOnly}) {
                         ? "bg-[#F05033]"
                         : course.theme === "seablue"
                         ? "bg-blue-500"
+                        : course.theme === "red"
+                        ? "bg-[#C52E31]"
                         : "bg-sky-900",
                       "flex-grow inline-flex justify-center rounded-sm border border-transparent shadow-sm px-2 py-1 md:px-4 md:py-2 text-white text-lg md:text-xl font-black"
                     )}

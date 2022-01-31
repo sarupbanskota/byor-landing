@@ -20,7 +20,7 @@ const courses = [
     name: 'Build Your Own Redis',
     description: 'Master the inner workings of Git, and explain any complex scenario. ',
     href: 'https://codecrafters.io/challenges/redis',
-    icon: "logo/git-half.png",
+    icon: "logo/redis-half.png",
   },
   {
     name: 'Build Your Own Docker',
