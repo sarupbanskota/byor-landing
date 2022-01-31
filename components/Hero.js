@@ -15,7 +15,7 @@ function Hero() {
               </h1>
               <p className="mt-3 max-w-md mx-auto text-lg sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
                 Build a real project. Achieve depth.{" "}
-                <br className="hidden md:block"></br>
+                <br/>
                 Become your team’s Rust expert.
               </p>
               {/* <div className="mt-8">
