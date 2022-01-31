@@ -4,7 +4,6 @@ import { Navbar } from "../components/Navbar";
 import mixpanel from 'mixpanel-browser';
 import { useEffect } from "react";
 import { useRouter } from 'next/router'
-import Head from 'next/head';
 import Script from 'next/script'
 
 export default App;
@@ -21,9 +20,10 @@ function App({ Component, pageProps }) {
   }, [])
   return (
     <>
-      <Head>
+    
         <Script
           strategy="afterInteractive"
+          id="ga"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -37,6 +37,7 @@ function App({ Component, pageProps }) {
 
         <Script
           strategy="afterInteractive"
+          id="hotjar"
           dangerouslySetInnerHTML={{
             __html: `
             (function(h,o,t,j,a,r){
@@ -58,7 +59,6 @@ function App({ Component, pageProps }) {
             volument('bfd3d6fe44')
           }}
         />
-      </Head>
       <Navbar />
       <Component {...pageProps} />
       <Footer />
