@@ -4,40 +4,44 @@ export { CourseCards };
 
 const courses = [
   {
+    key: 'git',
     name: "Build your own Git",
     desc: "Master the inner workings of Git, and explain any complex scenario. ",
     formattedDate: "Live Feb 22",
     level: "Advanced",
     theme: "orange",
     icon: "logo/git-half.png",
-    languages: ["Python", "Ruby", "Go", "Rust", "Kotlin"],
+    languages: ["Rust", "Go", "Python", "Ruby", "Kotlin"],
   },
   {
+    key: 'docker',
     name: "Build your own Docker",
     desc: "Dive deep into how Docker works, including the Registry API.",
     formattedDate: "Live Mar 22",
     level: "Intermediate",
     theme: "seablue",
     icon: "logo/docker-half.png",
-    languages: ["Go", "Nim", "C", "PHP"]
+    languages: ["Rust", "Go", "C", "PHP", "Nim" ]
   },
   {
+    key: 'sqlite',
     name: "Build your own SQLite",
     desc: "Gain a solid understanding of SQL’sfile format and indexing.",
     formattedDate: "Live Mar 22",
     level: "Advanced",
     theme: "darkblue",
     icon: "logo/sqlite-half.png",
-    languages:[]
+    languages: ["Rust", "Go", "Python", "Ruby"],
   },
   {
+    key: 'redis',
     name: "Build your own Redis",
     desc: "Master the inner workings of Git, and explain any complex scenario. ",
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
     icon: "logo/git-half.png",
-    languages: ["Python", "Ruby", "Go", "Haskell", "Rust", "C", "Elixir"],
+    languages: ["Rust", "Ruby",  "Elixir", "Haskell", "Go", "Python", "C"],
   },
   {
     name: "Build your own Regex Parser",
@@ -47,7 +51,7 @@ const courses = [
     level: "Advanced",
     theme: "orange",
     icon: "logo/git-half.png",
-    languages:[]
+    languages: []
   },
   {
     name: "Build your own HTTP Server",
@@ -57,7 +61,7 @@ const courses = [
     level: "Intermediate",
     theme: "seablue",
     icon: "logo/docker-half.png",
-    languages:[]
+    languages: []
   },
   {
     name: "Build your own Shell",
@@ -105,8 +109,8 @@ function CourseCards({title, waitlist, upcomingOnly}) {
         <div className="flex gap-8 overflow-scroll flex-col md:flex-row items-center">
           {courses.filter(c => upcomingOnly ? c.upcoming : !c.upcoming).map((course) => (
             <a
-              href="#"
-              key="course.name"
+              href={`https://app.codecrafters.io/courses/${course.key}`}
+              key={course.key}
               className="flex align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-lg hover:shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6 !pr-0 justify-between items-center min-w-fit border border-gray-100"
             >
               <div>
@@ -124,7 +128,7 @@ function CourseCards({title, waitlist, upcomingOnly}) {
                   </div>
                 </div>
                 <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-start gap-4">
-                  <motion.a href="https://vote.codecrafters.io" target="_blank" rel="noreferrer" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
+                  <motion.a href={`https://app.codecrafters.io/courses/${course.key}`} target="_blank" rel="noreferrer" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
                   <div
                     className={classNames(
                       course.theme === "orange"
@@ -155,7 +159,7 @@ function CourseCards({title, waitlist, upcomingOnly}) {
               </div>
               <div>
                 <img
-                  src={course.icon}
+                  src={`/for/${course.icon}`}
                   alt="git icon"
                   className=" h-32 object-contain"
                 />
