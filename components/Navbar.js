@@ -18,7 +18,7 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 const courses = [
   {
     name: 'Build Your Own Redis',
-    description: 'Master the inner workings of Git, and explain any complex scenario. ',
+    description: 'Take your networking skills further, by dissection how Redis works. ',
     href: 'https://codecrafters.io/challenges/redis',
     icon: "logo/redis-half.png",
   },

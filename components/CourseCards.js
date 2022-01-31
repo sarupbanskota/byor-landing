@@ -26,7 +26,7 @@ const courses = [
   {
     key: 'redis',
     name: "Build your own Redis",
-    desc: "Master the inner workings of Git, and explain any complex scenario. ",
+    desc: "Take your networking skills further, by dissection how Redis works. ",
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
