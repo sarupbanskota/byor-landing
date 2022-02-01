@@ -29,7 +29,7 @@ function FooterBottom() {
   return (
     // create a component with logo and text in a flex container
     <>
-    <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-4 lg:mt-12">
+    <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-4">
       <div className="flex items-center gap-4 flex-col lg:flex-row text-center md:text-left">
         <img
           src="/for/icons/CodeCrafters.png"
@@ -45,7 +45,7 @@ function FooterBottom() {
       </div>
       <div>
       <div className="mt-8 md:mt-0 flex flex-col items-center">
-      <p className="text-center text-sm text-gray-6">
+      <p className="text-center text-base text-gray-400">
         © 2022 Educode Limited. <br/>All rights reserved.
       </p>
       </div>
