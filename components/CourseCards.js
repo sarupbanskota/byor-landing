@@ -101,7 +101,7 @@ function classNames(...classes) {
 
 function CourseCards({title, waitlist, upcomingOnly}) {
   return (
-    <div className="bg-white bg-opacity-25">
+    <div className="">
       <div className="max-w-7xl mx-auto pb-16 px-4 sm:pb-24 sm:px-6 lg:px-8">
         {title && <p className="text-center text-xl font-normal mb-12 mt-12">
           Vote for an upcoming course, and get automatic early access
