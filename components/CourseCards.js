@@ -105,16 +105,18 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
 
     const coursesContainer = document.getElementsByClassName('course-cards')[0];
     const coursesScrollWidth = coursesContainer.scrollWidth;
+    let done = false
 
     setInterval(() => {
-      if (coursesContainer.scrollLeft < 100) {
+      if (!done && coursesContainer.scrollLeft < 100) {
         coursesContainer.scrollTo(coursesContainer.scrollLeft + 2, 0);
       }
     }, 1);
     setInterval(() => {
-      if (coursesContainer.scrollLeft < 200 && coursesContainer.scrollLeft >= 100) {
+      if (!done && coursesContainer.scrollLeft < 200 && coursesContainer.scrollLeft >= 100) {
         coursesContainer.scrollTo(coursesContainer.scrollLeft + 1, 0);
       }
+      if (coursesContainer.scrollLeft == 200) { done = true}
     }, 1);
   }, []);
   return (
@@ -125,7 +127,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
             Vote for an upcoming course, and get automatic early access
           </p>
         )}
-        <div className="course-cards flex gap-8 no-scrollbar overflow-scroll flex-col md:flex-row items-center">
+        <div className="my-8 md:my-0 course-cards flex gap-8 no-scrollbar overflow-scroll items-center">
           {courses
             .filter((c) => (upcomingOnly ? c.upcoming : !c.upcoming))
             .map((course) => (
@@ -153,20 +155,19 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                       href={`https://app.codecrafters.io/courses/${course.key}`}
                       target="_blank"
                       rel="noreferrer"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                      whileTap={{ scale: 0.98 }}
                     >
                       <div
-                        className={classNames(
+                        className={`hover:opacity-90 ${classNames(
                           course.theme === "orange"
-                            ? "bg-[#F05033]"
+                            ? "bg-[#F05033] "
                             : course.theme === "seablue"
                             ? "bg-blue-500"
                             : course.theme === "red"
                             ? "bg-[#C52E31]"
                             : "bg-sky-900",
                           "flex-grow inline-flex justify-center rounded-sm border border-transparent shadow-sm px-2 py-1 md:px-4 md:py-2 text-white text-lg md:text-xl font-black"
-                        )}
+                        )}`}
                       >
                         {course.upcoming ? (
                           "Vote"
