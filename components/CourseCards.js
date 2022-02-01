@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export { CourseCards };
 
@@ -100,15 +101,31 @@ function classNames(...classes) {
 }
 
 function CourseCards({ title, waitlist, upcomingOnly }) {
+  useEffect(() => {
+
+    const coursesContainer = document.getElementsByClassName('course-cards')[0];
+    const coursesScrollWidth = coursesContainer.scrollWidth;
+
+    setInterval(() => {
+      if (coursesContainer.scrollLeft < 100) {
+        coursesContainer.scrollTo(coursesContainer.scrollLeft + 2, 0);
+      }
+    }, 1);
+    setInterval(() => {
+      if (coursesContainer.scrollLeft < 200 && coursesContainer.scrollLeft >= 100) {
+        coursesContainer.scrollTo(coursesContainer.scrollLeft + 1, 0);
+      }
+    }, 1);
+  }, []);
   return (
-    <div className="">
+    <div>
       <div className="max-w-7xl mx-auto pb-16 px-4 sm:pb-24 sm:px-6 lg:px-8">
         {title && (
           <p className="text-center text-xl font-normal mb-12 mt-12">
             Vote for an upcoming course, and get automatic early access
           </p>
         )}
-        <div className="flex gap-8 overflow-scroll flex-col md:flex-row items-center">
+        <div className="course-cards flex gap-8 no-scrollbar overflow-scroll flex-col md:flex-row items-center">
           {courses
             .filter((c) => (upcomingOnly ? c.upcoming : !c.upcoming))
             .map((course) => (
