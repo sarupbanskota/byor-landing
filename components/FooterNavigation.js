@@ -2,9 +2,9 @@ export { FooterNavigation };
 
 const navigation = {
   Courses: [
+    { name: "Build Your Own Git", href: "https://codecrafters.io/challenges/git" },    
     { name: "Build Your Own Redis", href: "https://codecrafters.io/challenges/redis" },
     { name: "Build Your Own Docker", href: "https://codecrafters.io/challenges/docker" },
-    { name: "Build Your Own Git", href: "https://codecrafters.io/challenges/git" },
     { name: "Build Your Own SQLite", href: "https://codecrafters.io/challenges/sqlite" },
   ],
   Resources: [
@@ -28,17 +28,17 @@ function FooterNavigation() {
     <>
       <div className="md:grid md:grid-cols-2 md:gap-8">
         <div className="text-left">
-          <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+          <h3 className="text-sm font-semibold tracking-wider uppercase">
             Courses
           </h3>
-          <ul role="list" className="mt-4 space-y-4">
+          <ul role="list" className="mt-8 space-y-4">
             {navigation.Courses.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-base text-gray-900"
                 >
                   {item.name}
                 </a>
@@ -46,18 +46,18 @@ function FooterNavigation() {
             ))}
           </ul>
         </div>
-        <div className="mt-12 md:mt-0">
-          <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+        <div className="mt-12 md:mt-0 text-center">
+          <h3 className="text-sm font-semibold tracking-wider uppercase">
             Resources
           </h3>
-          <ul role="list" className="mt-4 space-y-4">
+          <ul role="list" className="mt-8 space-y-4">
             {navigation.Resources.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-base text-gray-900"
                 >
                   {item.name}
                 </a>
@@ -66,19 +66,19 @@ function FooterNavigation() {
           </ul>
         </div>
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-8">
+      <div className="md:grid md:grid-cols-2 md:gap-8 text-center">
         <div>
-          <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+          <h3 className="text-sm font-semibold tracking-wider uppercase">
             Company
           </h3>
-          <ul role="list" className="mt-4 space-y-4">
+          <ul role="list" className="mt-8 space-y-4">
             {navigation.Company.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-base text-gray-900"
                 >
                   {item.name}
                 </a>
@@ -86,18 +86,18 @@ function FooterNavigation() {
             ))}
           </ul>
         </div>
-        <div className="mt-12 md:mt-0">
-          <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+        <div className="mt-12 md:mt-0 text-right">
+          <h3 className="text-sm font-semibold tracking-wider uppercase">
             Legal
           </h3>
-          <ul role="list" className="mt-4 space-y-4">
+          <ul role="list" className="mt-8 space-y-4">
             {navigation.Legal.map((item) => (
-              <li key={item.name}>
+              <li key={item.name} className="">
                 <a
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-base text-gray-900"
                 >
                   {item.name}
                 </a>

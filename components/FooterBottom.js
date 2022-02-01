@@ -43,6 +43,13 @@ function FooterBottom() {
           </span>
         </p>
       </div>
+      <div>
+      <div className="mt-8 md:mt-0 flex flex-col items-center">
+      <p className="text-center text-base text-gray-400">
+        © 2022 Educode Limited. <br/>All rights reserved.
+      </p>
+      </div>
+    </div>
       <div className="flex justify-center space-x-6 text-xs">
         {social.map((item) => (
           <a
@@ -57,14 +64,6 @@ function FooterBottom() {
           </a>
         ))}
       </div>
-    </div>
-    <div>
-      <div className="mt-8 md:mt-0 flex flex-col items-center">
-
-<p className="text-center text-base text-gray-400">
-    © 2022 Educode Limited. <br/>All rights reserved.
-  </p>
-</div>
     </div>
     </>
   );
