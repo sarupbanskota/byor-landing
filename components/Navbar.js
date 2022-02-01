@@ -262,13 +262,13 @@ function Navbar() {
                 </nav>
               </div>
             </div>
-            <div className="py-6 px-5">
-              <div className="grid grid-cols-2 gap-4">
-                <a href="https://discord.gg/DeqUD2P" className="text-base font-medium text-gray-900 hover:text-gray-700">
+            <div>
+              <div className="grid grid-cols-2 overflow-hidden divide-solid divide-x divide-gray-100">
+                <a href="https://discord.gg/DeqUD2P" className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700 ">
                   Discord
                 </a>
 
-                <a href="https://codecrafters.io/testimonials" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                <a href="https://codecrafters.io/testimonials" className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700 ">
                   Testimonials
                 </a>
 
