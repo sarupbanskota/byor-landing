@@ -8,6 +8,7 @@ const navigation = {
     { name: "Build Your Own SQLite", href: "https://codecrafters.io/challenges/sqlite" },
   ],
   Resources: [
+    { name: "Dicord", href: "https://discord.com/invite/DeqUD2P" },
     { name: "Help", href: "https://docs.codecrafters.io/" },
     { name: "Status", href: "https://status.codecrafters.io/" },
     // { name: "Job Board", href: "#" },

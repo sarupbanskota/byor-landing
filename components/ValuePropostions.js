@@ -5,15 +5,15 @@ export { ValuePropositions };
 const values = [
   {
     id: 2,
-    desc: <>You're curious how your favorite <br className=""/>technologies work internally.</>,
+    desc: <>You’re curious how your favorite <br className=""/>technologies work internally.</>,
   },
   {
     id: 1,
-    desc: <>You're an experienced programmer, <br className=""/>looking to pickup or master Rust.</>,
+    desc: <>You’re an experienced programmer, <br className=""/>looking to pickup or master Rust.</>,
   },
   {
     id: 3,
-    desc: <>You're a self-paced, minimal guidance <br className=""/> person (vs requiring hand-holding).</>,
+    desc: <>You’re a self-paced, minimal guidance <br className=""/> person (vs requiring hand-holding).</>,
   },
 ];
 
