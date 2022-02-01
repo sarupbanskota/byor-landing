@@ -58,7 +58,7 @@ function classNames(...classes) {
 
 function Navbar() {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative">
       <div className="flex justify-center items-center px-4 py-6 sm:px-6 md:space-x-10">
       <div className="flex justify-start self-start">
           <a href="/" className="flex">

@@ -4,6 +4,16 @@ export { CourseCards };
 
 const courses = [
   {
+    key: 'redis',
+    name: "Build your own Redis",
+    desc: "Take your networking skills further, by dissecting how Redis works. ",
+    formattedDate: "Live Feb 22",
+    level: "Beginner",
+    theme: "red",
+    icon: "logo/redis-half.png",
+    languages: ["Rust", "Ruby",  "Elixir", "Haskell", "Go", "Python", "C"],
+  },
+  {
     key: 'git',
     name: "Build your own Git",
     desc: "Master the inner workings of Git, and explain any complex scenario. ",
@@ -22,16 +32,6 @@ const courses = [
     theme: "seablue",
     icon: "logo/docker-half.png",
     languages: ["Rust", "Go", "C", "PHP", "Nim" ]
-  },
-  {
-    key: 'redis',
-    name: "Build your own Redis",
-    desc: "Take your networking skills further, by dissection how Redis works. ",
-    formattedDate: "Live Feb 22",
-    level: "Beginner",
-    theme: "red",
-    icon: "logo/redis-half.png",
-    languages: ["Rust", "Ruby",  "Elixir", "Haskell", "Go", "Python", "C"],
   },
   {
     key: 'sqlite',
