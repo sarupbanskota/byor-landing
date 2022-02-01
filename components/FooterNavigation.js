@@ -47,7 +47,7 @@ function FooterNavigation() {
             ))}
           </ul>
         </div>
-        <div className="mt-12 md:mt-0 text-center">
+        <div className="mt-12 md:mt-0 md:text-center">
           <h3 className="text-sm font-semibold tracking-wider uppercase">
             Resources
           </h3>
@@ -67,7 +67,7 @@ function FooterNavigation() {
           </ul>
         </div>
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-8 text-center">
+      <div className="md:grid md:grid-cols-2 md:gap-8 md:text-center">
         <div>
           <h3 className="text-sm font-semibold tracking-wider uppercase">
             Company
@@ -87,7 +87,7 @@ function FooterNavigation() {
             ))}
           </ul>
         </div>
-        <div className="mt-12 md:mt-0 text-right">
+        <div className="mt-12 md:mt-0 md:text-right">
           <h3 className="text-sm font-semibold tracking-wider uppercase">
             Legal
           </h3>
