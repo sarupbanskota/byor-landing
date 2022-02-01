@@ -12,7 +12,9 @@ const courses = [
     level: "Beginner",
     theme: "red",
     icon: "logo/redis-half.png",
-    languages: ["Rust", "Ruby", "Elixir", "Haskell", "Go", "Python", "C"],
+    languages: ["Rust", "Ruby", "Elixir", "Python", "Go", 
+    // , "C", , "Haskell"
+    ],
   },
   {
     key: "git",
@@ -32,7 +34,9 @@ const courses = [
     level: "Intermediate",
     theme: "seablue",
     icon: "logo/docker-half.png",
-    languages: ["Rust", "Go", "C", "PHP", "Nim"],
+    languages: ["Rust", "Go", "C", "PHP", 
+    // "Nim"
+  ],
   },
   {
     key: "sqlite",
