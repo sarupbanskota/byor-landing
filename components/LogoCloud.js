@@ -6,13 +6,13 @@ const logos = [
   { name: "Stripe", src: "/for/logo/stripe.svg" },
   { name: "Amazon Web Services", src: "/for/logo/aws.svg" },
   { name: "Deliveroo", src: "/for/logo/deliveroo.svg" },
-  { name: "JP Morgan Chase", src: "/for/logo/jpm-chase.svg" },
+  // { name: "JP Morgan Chase", src: "/for/logo/jpm-chase.svg" },
 ];
 
 function LogoCloud() {
   return (
-    <div className="bg-gray-900">
-      <div className="max-w-7xl mx-auto py-12 lg:py-16 lg:pb-12 pb-8 px-4 sm:px-6 lg:px-8">
+    <div className="bg-black">
+      <div className="max-w-7xl mx-auto py-16 px-6 lg:px-48">
         <h2 className="text-center text-gray-400 text-sm tracking-wide pb-12">
           Our learners work at top teams, schools, and crypto projects
         </h2>
