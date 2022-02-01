@@ -29,7 +29,7 @@ function FooterBottom() {
   return (
     // create a component with logo and text in a flex container
     <>
-    <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-4">
+    <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-4 lg:mt-12">
       <div className="flex items-center gap-4 flex-col lg:flex-row text-center md:text-left">
         <img
           src="/for/icons/CodeCrafters.png"
