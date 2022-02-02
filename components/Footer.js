@@ -170,7 +170,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-green-200 pt-8">
-          <p className="text-base text-black opacity-20 xl:text-center">
+          <p className="text-base text-black opacity-20 text-center">
             &copy; 2020 Educode Limited. All rights reserved.
           </p>
         </div>
