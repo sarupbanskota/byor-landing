@@ -256,7 +256,7 @@ function Navbar() {
           className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-10"
         >
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-            <div className="pt-5 pb-6 px-5">
+            <div className="pt-5 pb-6 px-5 ">
               <div className="flex items-center justify-between">
                 <div>
                   <a href="/" className="flex">
@@ -277,21 +277,21 @@ function Navbar() {
                 </div>
               </div>
               <div className="mt-6">
-                <nav className="grid grid-cols-1 gap-7">
+                <nav className="grid grid-cols-1 gap-7 divide-y divide-gray-100">
                   {courses.map((course) => (
                     <a
                       key={course.name}
                       href={course.href}
-                      className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+                      className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50 first:border-t border-gray-100"
                     >
                       <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white">
                         <img
                           src={course.icon}
                           alt="git icon"
-                          className=" h-32 object-contain"
+                          className="w-6 object-contain"
                         />
                       </div>
-                      <div className="ml-4 text-base font-medium text-gray-900">
+                      <div className="ml-3 text-base font-medium text-gray-900">
                         {course.name}
                       </div>
                     </a>
