@@ -46,23 +46,12 @@ function ValuePropositions() {
                 <div className="mt-10 px-12 md:px-0 space-y-4 md:space-y-6 lg:space-y-10 max-w-lg">
                   {values.map((item) => (
                     <div key={item.id} className="relative">
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md text-white">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="rounded-full w-6 md:w-12 h-10 md:h-10 text-teal-400"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
+                      <div className="absolute flex items-center justify-center h-12 md:w-12 rounded-md text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="rounded-full w-6 md:w-12 h-10 md:h-10 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <p className="ml-16 md:text-2xl leading-6 font-medium text-white">
+                      <p className="ml-10 md:ml-16 md:text-2xl leading-6 font-medium text-white">
                         {item.desc}
                       </p>
                     </div>
