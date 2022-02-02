@@ -7,7 +7,7 @@ const values = [
     id: 2,
     desc: (
       <>
-        You’re curious how your favorite <br className="" />
+        You’re curious how your favorite <br className="hidden" />
         technologies work internally.
       </>
     ),
@@ -16,7 +16,7 @@ const values = [
     id: 1,
     desc: (
       <>
-        You’re an experienced programmer, <br className="" />
+        You’re an experienced programmer, <br className="hidden" />
         looking to pickup or master Rust.
       </>
     ),
@@ -25,7 +25,7 @@ const values = [
     id: 3,
     desc: (
       <>
-        You’re a self-paced, minimal guidance <br className="" /> person (vs
+        You’re a self-paced, minimal guidance <br className="hidden" /> person (vs
         requiring hand-holding).
       </>
     ),
