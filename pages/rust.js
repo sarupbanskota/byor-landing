@@ -37,6 +37,7 @@ export default function Home() {
         <Testimonial />
         <ValuePropositions />
         {/* <CourseCards upcomingOnly title waitlist/> */}
+        <Footer />
       </main>
     </div>
   );

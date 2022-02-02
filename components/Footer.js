@@ -60,10 +60,10 @@ const navigation = {
   ],
 };
 
-function Footer() {
+function Footer({light}) {
   return (
     <footer
-      className="bg-radial-at-b from-teal-100 via-lime-50 to-white"
+      className={light ? "bg-white" : "bg-radial-at-b from-teal-100 via-lime-50 to-white"}
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
