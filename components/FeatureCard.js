@@ -4,18 +4,50 @@ export { FeatureCard };
 const features = [
   {
     icon: "/for/logo/github.svg",
-    name: <>Real Projects. <br/>Just Enough Guidance.</>,
-    desc: <>Recreate your favorite tools, your own way. <br/>A fresh approach to language mastery.</>,
+    name: (
+      <>
+        Real Projects. <br />
+        Just Enough Guidance.
+      </>
+    ),
+    desc: (
+      <>
+        Recreate your favorite tools, your own way. <br />A fresh approach to
+        language mastery.
+      </>
+    ),
   },
   {
     icon: "/for/logo/iterm2.png",
-    name: <>Your Own Machine.<br/>Your Own Setup.</>,
-    desc: <>Work within your favorite local editor <br/>and terminal, with your favorite extensions.</>,
+    name: (
+      <>
+        Your Own Machine.
+        <br />
+        Your Own Setup.
+      </>
+    ),
+    desc: (
+      <>
+        Work within your favorite local editor <br />
+        and terminal, with your favorite extensions.
+      </>
+    ),
   },
   {
     icon: "/for/logo/discord.svg",
-    name: <>The Best Community.<br/>Inspiration Abound.</>,
-    desc: <>Discover new approaches from a community <br/>passionate about bettering themselves.</>,
+    name: (
+      <>
+        The Best Community.
+        <br />
+        Inspiration Abound.
+      </>
+    ),
+    desc: (
+      <>
+        Discover new approaches from a community <br />
+        passionate about bettering themselves.
+      </>
+    ),
   },
   ,
 ];

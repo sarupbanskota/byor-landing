@@ -26,10 +26,22 @@ const navigation = {
     },
   ],
   courses: [
-    { name: "Build Your Own Git", href: "https://codecrafters.io/challenges/git" },    
-    { name: "Build Your Own Redis", href: "https://codecrafters.io/challenges/redis" },
-    { name: "Build Your Own Docker", href: "https://codecrafters.io/challenges/docker" },
-    { name: "Build Your Own SQLite", href: "https://codecrafters.io/challenges/sqlite" },
+    {
+      name: "Build Your Own Git",
+      href: "https://codecrafters.io/challenges/git",
+    },
+    {
+      name: "Build Your Own Redis",
+      href: "https://codecrafters.io/challenges/redis",
+    },
+    {
+      name: "Build Your Own Docker",
+      href: "https://codecrafters.io/challenges/docker",
+    },
+    {
+      name: "Build Your Own SQLite",
+      href: "https://codecrafters.io/challenges/sqlite",
+    },
   ],
   resources: [
     { name: "Discord", href: "https://discord.com/invite/DeqUD2P" },
@@ -43,99 +55,126 @@ const navigation = {
     { name: "Bulk Licenses", href: "mailto:sarup@codecrafters.io" },
   ],
   legal: [
-    { name: "Terms", href: "https://codecrafters.io/terms" },    
+    { name: "Terms", href: "https://codecrafters.io/terms" },
     { name: "Privacy", href: "https://codecrafters.io/privacy" },
   ],
 };
 
-function Footer(){
+function Footer() {
   return (
-    <footer className="bg-radial-at-b from-teal-100 via-lime-50 to-white" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" className="sr-only">
-      Footer
-    </h2>
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div className="order-last md:order-none space-y-8 xl:col-span-1">
-          <img
-            className="h-10"
-            src="/for/icons/CodeCrafters.png"
-            alt="Code Crafters Logo"
-          />
-          <p className="text-gray-500 text-base font-bold">
-          CodeCrafters <br/>
-          <span className="font-normal">
-            Projects for hackers.
-          </span>
-        </p>
-          <div className="flex space-x-6">
-            {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
+    <footer
+      className="bg-radial-at-b from-teal-100 via-lime-50 to-white"
+      aria-labelledby="footer-heading"
+    >
+      <h2 id="footer-heading" className="sr-only">
+        Footer
+      </h2>
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="order-last md:order-none space-y-8 xl:col-span-1">
+            <img
+              className="h-10"
+              src="/for/icons/CodeCrafters.png"
+              alt="Code Crafters Logo"
+            />
+            <p className="text-gray-500 text-base font-bold">
+              CodeCrafters <br />
+              <span className="font-normal">Projects for hackers.</span>
+            </p>
+            <div className="flex space-x-6">
+              {navigation.social.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-400 hover:text-gray-500"
+                >
+                  <span className="sr-only">{item.name}</span>
+                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="order-first md:order-none mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
+                  Courses
+                </h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {navigation.courses.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-800 hover:underline"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-12 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
+                  Resources
+                </h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {navigation.resources.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-800 hover:underline"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
+                  Company
+                </h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {navigation.company.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-800 hover:underline"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-12 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
+                  Legal
+                </h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {navigation.legal.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-800 hover:underline"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="order-first md:order-none mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-          <div className="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Courses</h3>
-              <ul role="list" className="mt-4 space-y-4">
-                {navigation.courses.map((item) => (
-                  <li key={item.name}>
-                    <a href={item.href} className="text-base text-gray-800 hover:underline">
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-12 md:mt-0">
-              <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Resources</h3>
-              <ul role="list" className="mt-4 space-y-4">
-                {navigation.resources.map((item) => (
-                  <li key={item.name}>
-                    <a href={item.href} className="text-base text-gray-800 hover:underline">
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Company</h3>
-              <ul role="list" className="mt-4 space-y-4">
-                {navigation.company.map((item) => (
-                  <li key={item.name}>
-                    <a href={item.href} className="text-base text-gray-800 hover:underline">
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-12 md:mt-0">
-              <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Legal</h3>
-              <ul role="list" className="mt-4 space-y-4">
-                {navigation.legal.map((item) => (
-                  <li key={item.name}>
-                    <a href={item.href} className="text-base text-gray-800 hover:underline">
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        <div className="mt-12 border-t border-green-200 pt-8">
+          <p className="text-base text-black opacity-20 xl:text-center">
+            &copy; 2020 Educode Limited. All rights reserved.
+          </p>
         </div>
       </div>
-      <div className="mt-12 border-t border-green-200 pt-8">
-        <p className="text-base text-black opacity-20 xl:text-center">&copy; 2020 Educode Limited. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  )
+    </footer>
+  );
 }

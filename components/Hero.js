@@ -14,8 +14,7 @@ function Hero() {
                 The Rust Pro’s <br /> Best Kept Secret.
               </h1>
               <p className="mt-3 max-w-md mx-auto text-lg sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
-                Build a real project. Achieve depth.{" "}
-                <br/>
+                Build a real project. Achieve depth. <br />
                 Become your team’s Rust expert.
               </p>
               {/* <div className="mt-8">
@@ -25,8 +24,18 @@ function Hero() {
                 </span>
               </div> */}
               <p className="italic text-lg max-w-xl mt-8 inline-block">
-              “My favorite way to master a language.” <br/>
-                <span className="text-sm">— Pranjal Paliwal, $35k winner of <a href="https://hackatom.org/" target="_blank" rel="noreferrer" className="underline underline-offset-4">HackAtom 2021</a></span>
+                “My favorite way to master a language.” <br />
+                <span className="text-sm">
+                  — Pranjal Paliwal, $35k winner of{" "}
+                  <a
+                    href="https://hackatom.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline underline-offset-4"
+                  >
+                    HackAtom 2021
+                  </a>
+                </span>
               </p>
             </div>
           </div>
@@ -37,7 +46,7 @@ function Hero() {
             <div className="flex-1" />
             <div className="flex-1 w-full" />
           </div>
-          <CourseCards/>
+          <CourseCards />
           {/* <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <img
               className="relative"

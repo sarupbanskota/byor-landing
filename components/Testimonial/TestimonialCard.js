@@ -12,11 +12,7 @@ function TestimonialCard() {
               alt=""
             />
             <span className="absolute top-[16px] right-[-26px] block h-12 w-12 rounded-full ">
-              <img
-                className="rounded-full"
-                src="/for/logo/redis.svg"
-                alt=""
-              />
+              <img className="rounded-full" src="/for/logo/redis.svg" alt="" />
             </span>
           </span>
         </div>
@@ -34,7 +30,8 @@ function TestimonialCard() {
           </div>
           <div className="mt-4">
             <p className="text-center font-bold tracking-wide flex flex-col items-center justify-center">
-              <span>Charles Guo — Engineer, Scala Team</span> <img className="h-16" src="/for/logo/stripe-colored.svg"/>
+              <span>Charles Guo — Engineer, Scala Team</span>{" "}
+              <img className="h-16" src="/for/logo/stripe-colored.svg" />
             </p>
           </div>
         </div>
