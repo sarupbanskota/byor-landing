@@ -70,14 +70,14 @@ function Footer() {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="order-last md:order-none space-y-8 xl:col-span-1">
+        <div className="flex flex-col-reverse gap-16 lg:flex-row lg:justify-between lg:gap-8">
+          <div className="space-y-8 xl:col-span-1 flex flex-col justify-center items-center lg:items-start">
             <img
               className="h-10"
               src="/for/icons/CodeCrafters.png"
               alt="Code Crafters Logo"
             />
-            <p className="text-gray-500 text-base font-bold">
+            <p className="text-gray-500 text-base font-bold text-center lg:text-left">
               CodeCrafters <br />
               <span className="font-normal">Projects for hackers.</span>
             </p>
@@ -94,8 +94,8 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className="order-first md:order-none mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-12 grid grid-cols-2 gap-8 md:gap-0 xl:mt-0 xl:col-span-2">
+            <div className="md:grid md:grid-cols-2 md:gap-8 lg:gap-12">
               <div>
                 <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
                   Courses
@@ -131,7 +131,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div className="md:grid md:grid-cols-2 md:gap-8 lg:gap-12">
               <div>
                 <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
                   Company
