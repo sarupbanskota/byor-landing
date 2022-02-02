@@ -1,6 +1,6 @@
-export {Haskell};
+export { Haskell };
 
-function Haskell(color = '#38B2AC') {
+function Haskell({color = '#38B2AC'}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

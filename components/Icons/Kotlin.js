@@ -1,4 +1,4 @@
-export {Kotlin}
+export { Kotlin }
 
 function Kotlin() {
   return (
