@@ -43,7 +43,7 @@ function ValuePropositions() {
                 <h2 className="text-center lg:text-left text-2xl md:text-3xl font-extrabold tracking-tight text-white">
                   Are these exercises for me?
                 </h2>
-                <div className="mt-10 px-12 md:px-0 space-y-4 md:space-y-6 lg:space-y-10 max-w-lg">
+                <div className="mt-10 md:px-0 space-y-4 md:space-y-6 lg:space-y-10 max-w-lg">
                   {values.map((item) => (
                     <div key={item.id} className="relative">
                       <div className="absolute flex items-center justify-center h-12 md:w-12 rounded-md text-white">
