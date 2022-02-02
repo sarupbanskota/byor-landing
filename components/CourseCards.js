@@ -13,7 +13,7 @@ const courses = [
     theme: "red",
     icon: "logo/redis-half.png",
     languages: ["Rust", "Ruby", "Elixir", "Python", "Go", 
-    // , "C", , "Haskell"
+    // , "Clang", , "Haskell"
     ],
   },
   {
@@ -34,7 +34,7 @@ const courses = [
     level: "Intermediate",
     theme: "seablue",
     icon: "logo/docker-half.png",
-    languages: ["Rust", "Go", "C", "PHP", 
+    languages: ["Rust", "Go", "Clang", "PHP", 
     // "Nim"
   ],
   },
@@ -181,7 +181,6 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                       </div>
                     </motion.a>
                     <span className="flex gap-2">
-                      {/* if course.languages array is not empty, loop through the array and create an image tag with src attribute equals course.languages prepended with the word "icon" */}
                       {course.languages.length > 0 &&
                         course.languages.map((language) => (
                           <img
