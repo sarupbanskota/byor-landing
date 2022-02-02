@@ -56,7 +56,7 @@ function FeatureCard() {
   return (
     <section className="relative py-12 pb-16 border-t border-gray-700 border-opacity-50 bg-radial-at-t from-black to-gray-900">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap justify-center lg:justify-evenly items-center gap-16 md:gap-8">
           {features.map((feature) => (
             <div key={feature.name} className="pt-6">
               <div>
