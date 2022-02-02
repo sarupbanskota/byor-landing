@@ -73,9 +73,9 @@ function ValuePropositions() {
             </div>
           </div>
           <div className="margin-auto">
-            <div className="md:-mr-16 lg:relative lg:h-full">
+            <div className="lg:-mr-16 lg:relative lg:h-full">
               <img
-                className="w-full lg:absolute lg:-right-[180px] lg:h-full lg:w-auto lg:max-w-none"
+                className="w-full lg:absolute xl:-right-[180px] lg:h-full lg:w-auto lg:max-w-none"
                 src="/for/redis-course-light.png"
                 alt="Redis Course Screenshot"
               />
