@@ -9,9 +9,9 @@ const logos = [
   // { name: "JP Morgan Chase", src: "/for/logo/jpm-chase.svg" },
 ];
 
-function LogoCloud() {
+function LogoCloud({hideLogos}) {
   return (
-    <div className="bg-black">
+    <div className={!hideLogos ? "bg-black": "hidden"}>
       <div className="max-w-7xl mx-auto py-16 px-6 lg:px-48">
         <h2 className="text-center text-gray-400 text-sm tracking-wide pb-12">
           Our learners work at top teams, schools, and crypto projects
