@@ -22,7 +22,7 @@ function Testimonial({author, course, testimonial}) {
           link={"https://app.codecrafters.io/courses/redis"}
         />
         <a
-          href="https://codecrafters.io/testimonials"
+          href="/for/about"
           target="_blank"
           rel="noreferrer"
         >

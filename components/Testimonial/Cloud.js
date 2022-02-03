@@ -85,13 +85,13 @@ function TestimonialCloud() {
           link={"https://discord.com/invite/DeqUD2P"}
         />
         <a
-          href="https://codecrafters.io/testimonials"
+          href="https://discord.com/invite/DeqUD2P"
           target="_blank"
           rel="noreferrer"
         >
           <div className="inline-flex mt-4 gap-2 items-center">
             <StackedAvatars />{" "}
-            <p className="text-sm">Read more testimonials </p>
+            {/* <p className="text-sm">Meet our members </p> */}
           </div>
         </a>
         </div>
