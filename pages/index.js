@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <main className="w-full bg-radial-at-b from-teal-100 via-lime-50 to-white">
         <Hero title={<>Deep Dive Projects. <br/>For Curious Hackers.</>}
-         subtitle={<>The adventure you always wanted. <br/> In your language, at your pace.
+         subtitle={<>The adventure you always wanted. <br/> In the language you wanted to master.
           </>
         }
         testimonial={{
