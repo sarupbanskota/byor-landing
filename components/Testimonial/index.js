@@ -4,7 +4,7 @@ import { TestimonialCard } from "./TestimonialCard";
 
 export { Testimonial };
 
-function Testimonial() {
+function Testimonial({author, course, testimonial}) {
   return (
     <div>
       <div className="flex flex-col items-center max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
@@ -15,7 +15,7 @@ function Testimonial() {
           Our learners are always telling us how the Build your own X series
           takes them further in their programing journey.
         </p>
-        <TestimonialCard />
+        <TestimonialCard author={author} course={course} testimonial={testimonial}/>
         <PrimaryButton
           text="Try the Redis challenge →"
           color="black"

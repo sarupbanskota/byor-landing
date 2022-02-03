@@ -35,7 +35,22 @@ export default function Home() {
           </a></>
         }}/>
         <FeatureCard />
-        <Testimonial />
+        <Testimonial 
+            course="redis"
+            author={{
+              name: "Charles Guo",
+              image: "/for/avatar-charles-guo.png",
+              role: "Engineer, Scala Team",
+              company: "stripe"
+            }}
+            testimonial={{
+              title: "The redis challenge was extremely fun.",
+              content: <>I ended up having to read Redis protocol specification doc pretty
+              carefully in its entirety! The result felt like lightly-guided
+              independent study, if that makes sense. (Which, again, was lots of
+              fun)</>
+            }}
+          />
         <ValuePropositions />
         {/* <CourseCards upcomingOnly title waitlist/> */}
         <Footer />

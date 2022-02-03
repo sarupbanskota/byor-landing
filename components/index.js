@@ -1,6 +1,7 @@
 export * from "./FeatureCard";
 export * from "./Hero";
 export * from "./Testimonial";
+export { TestimonialCloud } from "./Testimonial/Cloud";
 export * from "./PrimaryButton";
 export * from "./ValuePropostions";
 export * from "./Stats";

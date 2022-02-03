@@ -1,13 +1,15 @@
 export {Team}
 
+import { PrimaryButton } from "components"
+
 const people = [
     {
       name: '@rohitpaulk',
-      role: <>Infrastructure junkie.<br/>SRE @ Clerky</>,
+      role: <>Infra, systems design, quality.<br/>SRE @ Clerky</>,
       imageUrl:
         '/for/rohitpaulk.jpeg',
       twitterUrl: 'https://twitter.com/rohitpaulk',
-      linkedinUrl: '#',
+      githubURL: 'https://github.com/rohitpaulk',
     },
     {
       name: '@sarupbanskota',
@@ -15,19 +17,19 @@ const people = [
       imageUrl:
         '/for/sarupbanskota.png',
       twitterUrl: 'https://twitter.com/sarupbanskota',
-      linkedinUrl: '#',
+      githubURL: 'https://github.com/sarupbanskota',
     }
   ]
   
   function Team() {
     return (
       <div>
-        <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+        <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24 bg-radial-at-t from-black to-gray-900">
           <div className="space-y-12">
             <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-white">Core Team</h2>
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-white">✨ &nbsp;Core Team</h2>
               <p className="text-xl text-white">
-                We're two makers — enough to be dangerous.
+                We're two makers, obsessed with growing into our best.
               </p>
             </div>
             <ul
@@ -72,6 +74,13 @@ const people = [
                 </li>
               ))}
             </ul>
+            <div className="flex justify-center">
+              <PrimaryButton
+                text="Get in touch →"
+                color="teal"
+                link={"mailto:sarup@codecrafters.io"}
+              />
+              </div>
           </div>
         </div>
       </div>

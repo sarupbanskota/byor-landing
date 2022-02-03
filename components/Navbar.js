@@ -174,12 +174,10 @@ function Navbar() {
             )}
           </Popover>
           <a
-            href="https://codecrafters.io/testimonials"
-            target="_blank"
-            rel="noreferrer"
+            href="/for/about"
             className="text-base font-medium text-gray-500 hover:text-gray-900"
           >
-            Testimonials
+            About
           </a>
           <a
             href="https://discord.com/invite/DeqUD2P"
@@ -309,10 +307,10 @@ function Navbar() {
                 </a>
 
                 <a
-                  href="https://codecrafters.io/testimonials"
+                  href="/for/about"
                   className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700 "
                 >
-                  Testimonials
+                  About
                 </a>
 
                 {/* {resources.map((resource) => (
