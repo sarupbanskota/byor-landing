@@ -51,7 +51,7 @@ const navigation = {
   ],
   company: [
     { name: "About", href: "mailto:sarup@codecrafters.io" },
-    { name: "Investors", href: "mailto:sarup@codecrafters.io" },
+    { name: "For Investors", href: "mailto:sarup@codecrafters.io" },
     { name: "Bulk Licenses", href: "mailto:sarup@codecrafters.io" },
   ],
   legal: [
