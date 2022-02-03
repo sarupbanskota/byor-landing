@@ -7,6 +7,7 @@ import {
   Testimonial,
   ValuePropositions,
   WaitlistForm,
+  Footer
 } from "components";
 
 export default function Home() {
