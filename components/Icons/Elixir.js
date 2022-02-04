@@ -1,4 +1,4 @@
-export { Elixir }
+export { Elixir };
 
 function Elixir() {
   return (

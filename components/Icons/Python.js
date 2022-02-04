@@ -1,6 +1,6 @@
-export { Python }
+export { Python };
 
-function Python({color = '#38B2AC'}) {
+function Python({ color = "#38B2AC" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

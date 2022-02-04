@@ -1,6 +1,6 @@
 export { TestimonialCard };
 
-function TestimonialCard({author, testimonial, course}) {
+function TestimonialCard({ author, testimonial, course }) {
   return (
     <div className="inline-block align-bottom bg-white rounded-lg px-8 pt-8 pb-4 text-left overflow-hidden shadow-xl transform transition-all mt-8 sm:align-middle sm:max-w-md sm:w-full border border-gray-50">
       <div>
@@ -12,7 +12,11 @@ function TestimonialCard({author, testimonial, course}) {
               alt={author.name}
             />
             <span className="absolute top-[16px] right-[-26px] block h-12 w-12 rounded-full ">
-              <img className="rounded-full" src={`/for/logo/${course}.svg`} alt="" />
+              <img
+                className="rounded-full"
+                src={`/for/logo/${course}.svg`}
+                alt=""
+              />
             </span>
           </span>
         </div>
@@ -21,14 +25,17 @@ function TestimonialCard({author, testimonial, course}) {
             {testimonial.title}
           </h3>
           <div className="mt-6">
-            <p className="text-md text-gray-500">
-              {testimonial.content}
-            </p>
+            <p className="text-md text-gray-500">{testimonial.content}</p>
           </div>
           <div className="mt-4">
             <p className="text-center font-bold tracking-wide flex flex-col items-center justify-center">
-              <span>{author.name} — {author.role}</span>{" "}
-              <img className="h-16" src={`/for/logo/${author.company}-colored.svg`} />
+              <span>
+                {author.name} — {author.role}
+              </span>{" "}
+              <img
+                className="h-16"
+                src={`/for/logo/${author.company}-colored.svg`}
+              />
             </p>
           </div>
         </div>

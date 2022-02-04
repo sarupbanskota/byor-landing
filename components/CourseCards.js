@@ -12,8 +12,13 @@ const courses = [
     level: "Beginner",
     theme: "red",
     icon: "logo/redis-half.png",
-    languages: ["Rust", "Ruby", "Elixir", "Python", "Go", 
-    // , "Clang", , "Haskell"
+    languages: [
+      "Rust",
+      "Ruby",
+      "Elixir",
+      "Python",
+      "Go",
+      // , "Clang", , "Haskell"
     ],
   },
   {
@@ -34,9 +39,13 @@ const courses = [
     level: "Intermediate",
     theme: "seablue",
     icon: "logo/docker-half.png",
-    languages: ["Rust", "Go", "Clang", "PHP", 
-    // "Nim"
-  ],
+    languages: [
+      "Rust",
+      "Go",
+      "Clang",
+      "PHP",
+      // "Nim"
+    ],
   },
   {
     key: "sqlite",
@@ -106,10 +115,9 @@ function classNames(...classes) {
 
 function CourseCards({ title, waitlist, upcomingOnly }) {
   useEffect(() => {
-
-    const coursesContainer = document.getElementsByClassName('course-cards')[0];
+    const coursesContainer = document.getElementsByClassName("course-cards")[0];
     const coursesScrollWidth = coursesContainer.scrollWidth;
-    let done = false
+    let done = false;
 
     setInterval(() => {
       if (!done && coursesContainer.scrollLeft < 100) {
@@ -117,10 +125,16 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
       }
     }, 1);
     setInterval(() => {
-      if (!done && coursesContainer.scrollLeft < 200 && coursesContainer.scrollLeft >= 100) {
+      if (
+        !done &&
+        coursesContainer.scrollLeft < 200 &&
+        coursesContainer.scrollLeft >= 100
+      ) {
         coursesContainer.scrollTo(coursesContainer.scrollLeft + 1, 0);
       }
-      if (coursesContainer.scrollLeft == 200) { done = true}
+      if (coursesContainer.scrollLeft == 200) {
+        done = true;
+      }
     }, 1);
   }, []);
   return (

@@ -60,10 +60,12 @@ const navigation = {
   ],
 };
 
-function Footer({light}) {
+function Footer({ light }) {
   return (
     <footer
-      className={light ? "bg-white" : "bg-radial-at-b from-teal-100 via-lime-50 to-white"}
+      className={
+        light ? "bg-white" : "bg-radial-at-b from-teal-100 via-lime-50 to-white"
+      }
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
@@ -171,7 +173,8 @@ function Footer({light}) {
         </div>
         <div className="mt-12 border-t border-green-200 pt-8">
           <p className="text-base text-black opacity-20 text-center">
-            &copy; {new Date().getFullYear()} Educode Limited. All rights reserved.
+            &copy; {new Date().getFullYear()} Educode Limited. All rights
+            reserved.
           </p>
         </div>
       </div>

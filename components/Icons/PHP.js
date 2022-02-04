@@ -1,6 +1,6 @@
-export { PHP }
+export { PHP };
 
-function PHP({color = '#38B2AC'}) {
+function PHP({ color = "#38B2AC" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
