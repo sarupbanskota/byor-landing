@@ -174,7 +174,7 @@ function Navbar() {
             )}
           </Popover>
           <a
-            href="/for/about"
+            href="https://codecrafters.io/about"
             className="text-base font-medium text-gray-500 hover:text-gray-900"
           >
             About
@@ -307,7 +307,7 @@ function Navbar() {
                 </a>
 
                 <a
-                  href="/for/about"
+                  href="https://codecrafters.io/about"
                   className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700 "
                 >
                   About
