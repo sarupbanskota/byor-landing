@@ -22,8 +22,8 @@ export default function Home() {
         <Hero
           title={
             <>
-              Deep Dive Projects. <br />
-              For Curious Hackers.
+              Deep dive projects <br />
+              for curious hackers.
             </>
           }
           subtitle={

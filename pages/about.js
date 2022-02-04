@@ -26,17 +26,17 @@ export default function Home() {
           dark
           title={
             <>
-              Built for Explorers of Code.
+              A community of hackers 
               <br />
-              By Hackers who like to Hack.
+              who dig one level deeper.
               <br />
             </>
           }
           subtitle={
             <>
-              Because what you experience through building is special.
-              <br />
-              We celebrate curiosity, growth, and community.
+              We celebrate curiosity, growth, and learning by doing.
+              <br className="hidden md:block"/>
+              Because hands-on experience is special.
             </>
           }
           testimonial={{

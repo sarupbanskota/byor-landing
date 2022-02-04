@@ -9,15 +9,16 @@ function TestimonialCloud() {
     <div>
       <div className="flex flex-col items-center mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
-          A community you want to be in.
+          A group you want to be part of.
           <br />
           The passion is infectious.
         </h2>
         <p className="mt-4 text-lg leading-6 text-black max-w-lg">
-          Our community spans top tech teams, projects, and learning
-          organisations. We are united by our love for programming.
+          Our community spans top tech teams, projects, and schools. 
+          We are united by our love for programming.
         </p>
-        <div className="grid gap-6 lg:grid-cols-3 ">
+        {/* <div className="grid gap-6 lg:grid-cols-3 "> */}
+        <div className="flex justify-center ">
           <TestimonialCard
             course="redis"
             author={{
@@ -38,7 +39,7 @@ function TestimonialCloud() {
               ),
             }}
           />
-          <TestimonialCard
+          {/* <TestimonialCard
             course="redis"
             author={{
               name: "Maya Brodsky",
@@ -56,7 +57,7 @@ function TestimonialCloud() {
                 </>
               ),
             }}
-          />
+          /> */}
           {/* <TestimonialCard 
             course="redis"
             author={{
@@ -73,7 +74,7 @@ function TestimonialCloud() {
             </>
             }}
           /> */}
-          <TestimonialCard
+          {/* <TestimonialCard
             course="redis"
             author={{
               name: "Raghav Dua",
@@ -92,7 +93,7 @@ function TestimonialCloud() {
                 </>
               ),
             }}
-          />
+          /> */}
         </div>
         <div className="mt-8 flex flex-col">
           <PrimaryButton
