@@ -13,7 +13,7 @@ function Testimonial({ author, course, testimonial }) {
         </h2>
         <p className="mt-4 text-lg leading-6 text-black max-w-lg">
           Our learners are always telling us how the Build your own X series
-          takes them further in their programing journey.
+          takes them further in their programming journey.
         </p>
         <TestimonialCard
           author={author}
@@ -26,7 +26,7 @@ function Testimonial({ author, course, testimonial }) {
             color="black"
             link={"https://app.codecrafters.io/courses/redis"}
           />
-          <a href="/for/about" target="_blank" rel="noreferrer">
+          <a href="/testimonials" target="_blank" rel="noreferrer">
             <div className="inline-flex mt-4 gap-2 items-center">
               <StackedAvatars />{" "}
               <p className="text-sm">Read more testimonials </p>

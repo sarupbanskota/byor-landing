@@ -50,7 +50,7 @@ const navigation = {
     // { name: "Job Board", href: "#" },
   ],
   company: [
-    { name: "About", href: "mailto:sarup@codecrafters.io" },
+    { name: "About", href: "/about" },
     { name: "For Investors", href: "mailto:sarup@codecrafters.io" },
     { name: "Bulk Licenses", href: "mailto:sarup@codecrafters.io" },
   ],
@@ -171,7 +171,7 @@ function Footer({ light }) {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-green-200 pt-8">
+        <div className="mt-12 pt-8">
           <p className="text-base text-black opacity-20 text-center">
             &copy; {new Date().getFullYear()} Educode Limited. All rights
             reserved.
