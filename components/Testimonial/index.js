@@ -16,6 +16,7 @@ function Testimonial({author, course, testimonial}) {
           takes them further in their programing journey.
         </p>
         <TestimonialCard author={author} course={course} testimonial={testimonial}/>
+        <div className="mt-8 flex flex-col">
         <PrimaryButton
           text="Try the Redis challenge →"
           color="black"
@@ -31,6 +32,7 @@ function Testimonial({author, course, testimonial}) {
             <p className="text-sm">Read more testimonials </p>
           </div>
         </a>
+        </div>
       </div>
     </div>
   );
