@@ -72,7 +72,7 @@ function FeatureCard() {
                 <h3 className="mt-4 text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-white">
                   {feature.name}
                 </h3>
-                <p className="mt-5 text-lg tracking-tight text-gray-400">
+                <p className="mt-5 text-base md:text-lg tracking-tight text-gray-400">
                   {feature.desc}
                 </p>
               </div>
