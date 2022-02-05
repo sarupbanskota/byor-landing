@@ -14,8 +14,8 @@ function TestimonialCloud() {
           The passion is infectious.
         </h2>
         <p className="mt-4 text-lg leading-6 text-black max-w-lg">
-          Our community spans top tech teams, projects, and schools. 
-          We are united by our love for programming.
+          Our community spans top tech teams, projects, and schools. We are
+          united by our love for programming.
         </p>
         {/* <div className="grid gap-6 lg:grid-cols-3 "> */}
         <div className="flex justify-center ">

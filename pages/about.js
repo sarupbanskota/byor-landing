@@ -26,7 +26,7 @@ export default function Home() {
           dark
           title={
             <>
-              A community of hackers 
+              A community of hackers
               <br />
               who dig one level deeper.
               <br />
@@ -35,7 +35,7 @@ export default function Home() {
           subtitle={
             <>
               We celebrate curiosity, growth, and learning by doing.
-              <br className="hidden md:block"/>
+              <br className="hidden md:block" />
               Because hands-on experience is special.
             </>
           }

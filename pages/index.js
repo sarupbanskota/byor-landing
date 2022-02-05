@@ -17,6 +17,30 @@ export default function Home() {
       <Head>
         <title>Projects for hackers</title>
         <link rel="icon" href="/for/favicon.ico" />
+        <title>Build your own X</title>
+        <meta name="title" content="Build your own X" />
+        <meta
+          name="description"
+          content="Clone Git, Docker, Redis, etc. in your favorite programming language."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://codecrafters.io/" />
+        <meta property="og:title" content="Build your own X" />
+        <meta
+          property="og:description"
+          content="Clone Git, Docker, Redis, etc. in your favorite programming language."
+        />
+        <meta property="og:image" content="/landing-og.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://codecrafters.io" />
+        <meta property="twitter:title" content="Build your own X" />
+        <meta
+          property="twitter:description"
+          content="Clone Git, Docker, Redis, etc. in your favorite programming language."
+        />
+        <meta property="twitter:image" content="/landing-og.png" />
       </Head>
       <main className="w-full bg-radial-at-b from-teal-100 via-lime-50 to-white">
         <Hero

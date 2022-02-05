@@ -20,7 +20,9 @@ function LogoCloud({ hideLogos }) {
           {logos.map((logo, index) => (
             <div
               key={`logo-${index}`}
-              className={`col-span-1 flex justify-center md:col-span-2 lg:col-span-1 ${index % 2 == 1 ? "hidden md:block" : ""}`}
+              className={`col-span-1 flex justify-center md:col-span-2 lg:col-span-1 ${
+                index % 2 == 1 ? "hidden md:block" : ""
+              }`}
             >
               <img
                 className="h-12 mix-blend-luminosity"
