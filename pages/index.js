@@ -40,7 +40,7 @@ export default function Home() {
           property="twitter:description"
           content="Clone Git, Docker, Redis, etc. in your favorite programming language."
         />
-        <meta property="twitter:image" content="/landing-og.png" />
+        <meta property="twitter:image" content="/for/landing-og.png" />
       </Head>
       <main className="w-full bg-radial-at-b from-teal-100 via-lime-50 to-white">
         <Hero
