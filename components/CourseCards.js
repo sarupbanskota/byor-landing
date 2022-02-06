@@ -145,7 +145,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
             Vote for an upcoming course, and get automatic early access
           </p>
         )}
-        <div className="my-8 md:my-0 course-cards flex gap-8 no-scrollbar overflow-scroll items-center">
+        <div className="my-8 md:my-0 course-cards flex space-x-8 no-scrollbar overflow-scroll items-center">
           {courses
             .filter((c) => (upcomingOnly ? c.upcoming : !c.upcoming))
             .map((course) => (
@@ -168,7 +168,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-start gap-4">
+                  <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-start space-x-4">
                     <motion.a
                       href={`https://app.codecrafters.io/courses/${course.key}`}
                       target="_blank"
@@ -194,7 +194,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                         )}
                       </div>
                     </motion.a>
-                    <span className="flex gap-2">
+                    <span className="flex space-x-2">
                       {course.languages.length > 0 &&
                         course.languages.map((language) => (
                           <img
