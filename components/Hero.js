@@ -34,7 +34,7 @@ function Hero({ title, subtitle, testimonial, dark, hideCourses, hideLogos }) {
       }
     >
       <div className="relative overflow-hidden">
-        <div className="relative pt-6 pb-4 md:pb-16">
+        <div className="relative pt-6 pb-4">
           <div className="mt-8 mx-auto max-w-7xl px-4 sm:mt-8 sm:px-6">
             <div className="text-center">
               <h1

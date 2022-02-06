@@ -145,14 +145,14 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
             Vote for an upcoming course, and get automatic early access
           </p>
         )}
-        <div className="my-8 md:my-0 course-cards flex space-x-8 no-scrollbar overflow-scroll items-center">
+        <div className="my-8 md:my-0 course-cards flex space-x-8 no-scrollbar overflow-x-scroll items-center py-10">
           {courses
             .filter((c) => (upcomingOnly ? c.upcoming : !c.upcoming))
             .map((course) => (
               <a
                 href={`https://app.codecrafters.io/courses/${course.key}`}
                 key={course.key}
-                className="flex align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-lg hover:shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6 !pr-0 justify-between items-center min-w-fit border border-gray-100"
+                className="flex align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left shadow-lg hover:shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6 !pr-0 justify-between items-center min-w-fit border border-gray-100"
               >
                 <div>
                   {" "}
