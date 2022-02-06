@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 export { CourseCards };
@@ -169,11 +168,10 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                     </div>
                   </div>
                   <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-start space-x-4">
-                    <motion.a
+                    <a
                       href={`https://app.codecrafters.io/courses/${course.key}`}
                       target="_blank"
                       rel="noreferrer"
-                      whileTap={{ scale: 0.98 }}
                     >
                       <div
                         className={`hover:opacity-90 ${classNames(
@@ -193,7 +191,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                           <span>Try {course.level} →</span>
                         )}
                       </div>
-                    </motion.a>
+                    </a>
                     <span className="flex space-x-2">
                       {course.languages.length > 0 &&
                         course.languages.map((language) => (
