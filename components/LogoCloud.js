@@ -16,11 +16,11 @@ function LogoCloud({ hideLogos }) {
         <h2 className="text-center text-gray-400 text-sm tracking-wide pb-12">
           Our learners work at top teams, schools, and crypto projects
         </h2>
-        <div className="flex justify-between">
+        <div className="flex justify-center md:justify-between items-end flex-wrap">
           {logos.map((logo, index) => (
             <div
               key={`logo-${index}`}
-              className={`col-span-1 flex justify-center md:col-span-2 lg:col-span-1 ${
+              className={`flex justify-center p-4 ${
                 index % 2 == 1 ? "hidden md:block" : ""
               }`}
             >
