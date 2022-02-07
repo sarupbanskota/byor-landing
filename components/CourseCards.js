@@ -151,7 +151,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
               <a
                 href={`https://app.codecrafters.io/courses/${course.key}`}
                 key={course.key}
-                className="flex align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left shadow-lg hover:shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6 !pr-0 justify-between items-center min-w-fit border border-gray-100"
+                className="flex align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left shadow-lg hover:shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6 !pr-0 justify-between items-center min-w-[340px] md:min-w-fit border border-gray-100"
               >
                 <div>
                   {" "}
