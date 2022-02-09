@@ -16,6 +16,36 @@ export default function Home() {
       <Head>
         <title>Master Rust with Real Projects</title>
         <link rel="icon" href="/for/favicon.ico" />
+
+        <meta name="title" content="Build your own X in Rust" />
+        <meta
+          name="description"
+          content="Clone Git, Docker, Redis, or SQLite — and master Rust."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://codecrafters.io/" />
+        <meta property="og:title" content="Build your own X in Rust" />
+        <meta
+          property="og:description"
+          content="Clone Git, Docker, Redis, or SQLite — and master Rust."
+        />
+        <meta
+          property="og:image"
+          content="https://codecrafters.io/for/for/landing-og.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://codecrafters.io" />
+        <meta property="twitter:title" content="Build your own X in Rust" />
+        <meta
+          property="twitter:description"
+          content="Clone Git, Docker, Redis, or SQLite — and master Rust."
+        />
+        <meta
+          property="twitter:image"
+          content="https://codecrafters.io/for/for/landing-og.png"
+        />
       </Head>
       <main className="w-full bg-radial-at-b from-teal-100 via-lime-50 to-white">
         <Hero
