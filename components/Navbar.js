@@ -39,7 +39,7 @@ const courses = [
   {
     name: "Build Your Own SQLite",
     description:
-      "Gain a solid understanding of SQL’s file format and indexing.",
+      "Gain a solid understanding of SQLite’s file format and indexing.",
     href: "https://codecrafters.io/challenges/sqlite",
     icon: "/for/logo/sqlite-half.png",
   },
