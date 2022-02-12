@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export { TestimonialCard };
 
 function TestimonialCard({ author, testimonial, course }) {
@@ -6,16 +8,21 @@ function TestimonialCard({ author, testimonial, course }) {
       <div>
         <div className="mx-auto flex items-center justify-center h-24 w-24 rounded-full">
           <span className="inline-block relative">
-            <img
-              className="rounded-full bg-gradient-to-br from-red-100"
+            <Image
               src={author.image}
               alt={author.name}
+              width={96}
+              height={96}
+              className="rounded-full bg-gradient-to-br from-red-100"
             />
             <span className="absolute top-[16px] right-[-26px] block h-12 w-12 rounded-full ">
-              <img
+              <Image
                 className="rounded-full"
                 src={`/for/logo/${course}.svg`}
-                alt=""
+                alt={`${course} logo`}
+                width={35}
+                height={31}
+                
               />
             </span>
           </span>
@@ -32,9 +39,11 @@ function TestimonialCard({ author, testimonial, course }) {
               <span>
                 {author.name} — {author.role}
               </span>{" "}
-              <img
-                className="h-16"
+              <Image
                 src={`/for/logo/${author.company}-colored.svg`}
+                alt=""
+                width={90}
+                height={64}
               />
             </p>
           </div>
