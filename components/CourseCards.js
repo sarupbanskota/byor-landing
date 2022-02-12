@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { useEffect } from "react";
 
 export { CourseCards };
@@ -10,7 +12,7 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Beginner",
     theme: "red",
-    icon: "logo/redis-half.png",
+    icon: "logo/redis-half-resized.png",
     languages: [
       "Rust",
       "Ruby",
@@ -27,7 +29,7 @@ const courses = [
     formattedDate: "Live Feb 22",
     level: "Advanced",
     theme: "orange",
-    icon: "logo/git-half.png",
+    icon: "logo/git-half-resized.png",
     languages: ["Rust", "Go", "Python", "Ruby", "Kotlin"],
   },
   {
@@ -37,7 +39,7 @@ const courses = [
     formattedDate: "Live Mar 22",
     level: "Intermediate",
     theme: "seablue",
-    icon: "logo/docker-half.png",
+    icon: "logo/docker-half-resized.png",
     languages: [
       "Rust",
       "Go",
@@ -208,23 +210,29 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                     <span className="flex space-x-2">
                       {course.languages.length > 0 &&
                         course.languages.map((language) => (
-                          <img
+                          <div>
+                            <Image
                             src={`/for/icons/${language.toLowerCase()}.svg`}
-                            alt={language}
-                            className="h-5 w-5"
-                            key={language}
-                            title={language}
+                            alt={`${language} logo`}
+                            height={20}
+                            width={20}
+                            layout="fixed"
+                            priority={true}
                           />
+                          </div>
                         ))}
                     </span>
                   </div>
                 </div>
                 <div className="absolute md:relative inset-y-0 right-0 opacity-20 md:opacity-100">
-                  <img
-                    src={`/for/${course.icon}`}
-                    alt="git icon"
-                    className=" h-32 object-contain"
-                  />
+                 <div style={{ position: 'relative', width: '100px', height: '128px' }}>
+                      <Image
+                        src={`/for/${course.icon}`}
+                        alt={`${course.key} logo`}
+                        layout="fill" objectFit="contain"
+                        priority={true}
+                      />
+                 </div>
                 </div>
               </a>
             ))}
