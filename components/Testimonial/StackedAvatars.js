@@ -1,28 +1,41 @@
 export { StackedAvatars };
 
+const avatars = [
+  {
+    name: "avatar-1",
+    imageUrl: "/for/avatar-1.jpeg",
+  },
+  {
+    name: "avatar-2",
+    imageUrl: "/for/avatar-2.jpeg",
+  },
+  {
+    name: "avatar-3",
+    imageUrl: "/for/avatar-3.jpeg",
+  },
+  {
+    name: "avatar-4",
+    imageUrl: "/for/avatar-4.jpeg",
+  },
+];
+
 function StackedAvatars() {
   return (
     <div className="flex -space-x-1 overflow-hidden">
-      <img
-        className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-        src="https://pbs.twimg.com/profile_images/1384990837172424711/m4ZdabPi_400x400.jpg"
-        alt=""
-      />
-      <img
-        className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-        src="https://github.com/byarr.png"
-        alt=""
-      />
-      <img
-        className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-        src="https://stacks-production-us-east-1-upload.imgix.net/5c14812e-fca8-4984-a3c3-dedbeb6558fc.jpg"
-        alt=""
-      />
-      <img
-        className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-        src="https://avatars.githubusercontent.com/u/10102690?v=4"
-        alt=""
-      />
+      {avatars.map(
+        (avatar) =>
+          avatar.imageUrl && (
+            <div key={avatar.name} className="flex-shrink-0">
+             <img
+              className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+              src={avatar.imageUrl}
+              alt={avatar.name}
+              loading="lazy"
+            />
+
+            </div>
+          ),
+      )}
     </div>
   );
 }
