@@ -146,13 +146,13 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
             Vote for an upcoming course, and get automatic early access
           </p>
         )}
-        <div className="my-8 md:my-0 course-cards flex space-x-8 no-scrollbar overflow-x-scroll items-center py-10">
+        <div className="my-8 md:my-0 course-cards flex justify-center flex-wrap items-center py-10 gap-6">
           {courses
             .filter((c) => (upcomingOnly ? c.upcoming : !c.upcoming))
             .map((course) => (
               <a
                 href={`https://app.codecrafters.io/courses/${course.key}`}
-                key={course.key}
+                key={course.name}
                 className="flex align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left shadow-lg hover:shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6 !pr-0 justify-between items-center min-w-[340px] md:min-w-fit border border-gray-100"
               >
                 <div>
@@ -180,30 +180,30 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                           course.theme === "orange"
                             ? "bg-[#F05033] "
                             : course.theme === "seablue"
-                            ? "bg-blue-500"
-                            : course.theme === "red"
-                            ? "bg-[#C52E31]"
-                            : "bg-sky-900",
+                              ? "bg-blue-500"
+                              : course.theme === "red"
+                                ? "bg-[#C52E31]"
+                                : "bg-sky-900",
                           "flex-grow inline-flex justify-center rounded-sm border border-transparent shadow-sm px-2 py-1 md:px-4 md:py-2 text-white text-lg md:text-xl font-black"
                         )}`}
                       >
                         {course.upcoming ? (
                           "Vote"
                         ) : (
-                          <span> 
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 18 18"
-                            width={18}
-                            height={18}
-                            fill="white"
-                            className="inline"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-                          />
-                        </svg> Try {course.level} →</span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 18 18"
+                              width={18}
+                              height={18}
+                              fill="white"
+                              className="inline"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                              />
+                            </svg> Try {course.level} →</span>
                         )}
                       </div>
                     </a>
@@ -212,27 +212,27 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                         course.languages.map((language) => (
                           <div>
                             <Image
-                            src={`/for/icons/${language.toLowerCase()}.svg`}
-                            alt={`${language} logo`}
-                            height={20}
-                            width={20}
-                            layout="fixed"
-                            priority={true}
-                          />
+                              src={`/for/icons/${language.toLowerCase()}.svg`}
+                              alt={`${language} logo`}
+                              height={20}
+                              width={20}
+                              layout="fixed"
+                              priority={true}
+                            />
                           </div>
                         ))}
                     </span>
                   </div>
                 </div>
                 <div className="absolute md:relative inset-y-0 right-0 opacity-20 md:opacity-100">
-                 <div style={{ position: 'relative', width: '100px', height: '128px' }}>
-                      <Image
-                        src={`/for/${course.icon}`}
-                        alt={`${course.key} logo`}
-                        layout="fill" objectFit="contain"
-                        priority={true}
-                      />
-                 </div>
+                  <div style={{ position: 'relative', width: '100px', height: '128px' }}>
+                    <Image
+                      src={`/for/${course.icon}`}
+                      alt={`${course.key} logo`}
+                      layout="fill" objectFit="contain"
+                      priority={true}
+                    />
+                  </div>
                 </div>
               </a>
             ))}
