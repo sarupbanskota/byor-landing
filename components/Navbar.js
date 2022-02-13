@@ -99,7 +99,7 @@ function Navbar() {
           as="nav"
           className="hidden md:flex items-center space-x-10"
         >
-          <Popover className="relative">
+          {/* <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
@@ -154,7 +154,7 @@ function Navbar() {
                           </a>
                         ))}
                       </div>
-                      {/* <div className="p-5 bg-gray-50 sm:p-8">
+                      <div className="p-5 bg-gray-50 sm:p-8">
                         <a href="#" className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
                           <div className="flex items-center">
                             <div className="text-base font-medium text-gray-900">Enterprise</div>
@@ -166,13 +166,14 @@ function Navbar() {
                             Empower your entire team with bulk licenses.
                           </p>
                         </a>
-                      </div> */}
+                      </div>
                     </div>
                   </Popover.Panel>
                 </Transition>
               </>
             )}
-          </Popover>
+          </Popover> */}
+          
           <a
             href="/for/about"
             className="text-base font-medium text-gray-500 hover:text-gray-900"
