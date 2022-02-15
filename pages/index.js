@@ -32,7 +32,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://codecrafters.io/for/for/landing-og.png"
+          content="https://codecrafters.io/for/for/landing-og-index.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
