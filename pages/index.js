@@ -15,13 +15,12 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
-        <title>Projects for hackers</title>
+        <title>Master your language</title>
         <link rel="icon" href="/for/favicon.ico" />
-        <title>Build your own X</title>
-        <meta name="title" content="Build your own X" />
+        <meta name="title" content="Master your language" />
         <meta
           name="description"
-          content="Clone Git, Docker, Redis, etc. in your favorite programming language."
+          content="Build Git, Docker, Redis & SQLite from scratch."
         />
 
         <meta property="og:type" content="website" />
@@ -29,7 +28,7 @@ export default function Home() {
         <meta property="og:title" content="Build your own X" />
         <meta
           property="og:description"
-          content="Clone Git, Docker, Redis, etc. in your favorite programming language."
+          content="Build Git, Docker, Redis & SQLite from scratch."
         />
         <meta
           property="og:image"
@@ -41,7 +40,7 @@ export default function Home() {
         <meta property="twitter:title" content="Build your own X" />
         <meta
           property="twitter:description"
-          content="Clone Git, Docker, Redis, etc. in your favorite programming language."
+          content="Build Git, Docker, Redis & SQLite from scratch."
         />
         <meta
           property="twitter:image"

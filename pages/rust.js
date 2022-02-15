@@ -14,21 +14,21 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
-        <title>Master Rust with Real Projects</title>
+        <title>Master Rust</title>
         <link rel="icon" href="/for/favicon.ico" />
 
-        <meta name="title" content="Build your own X in Rust" />
+        <meta name="title" content="Master Rust" />
         <meta
           name="description"
-          content="Clone Git, Docker, Redis, or SQLite — and master Rust."
+          content="Build Git, Docker, Redis & SQLite from scratch, in Rust."
         />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://codecrafters.io/" />
-        <meta property="og:title" content="Build your own X in Rust" />
+        <meta property="og:title" content="Master Rust" />
         <meta
           property="og:description"
-          content="Clone Git, Docker, Redis, or SQLite — and master Rust."
+          content="Build Git, Docker, Redis & SQLite from scratch, in Rust."
         />
         <meta
           property="og:image"
@@ -40,7 +40,7 @@ export default function Home() {
         <meta property="twitter:title" content="Build your own X in Rust" />
         <meta
           property="twitter:description"
-          content="Clone Git, Docker, Redis, or SQLite — and master Rust."
+          content="Build Git, Docker, Redis & SQLite from scratch, in Rust."
         />
         <meta
           property="twitter:image"
