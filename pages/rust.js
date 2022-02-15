@@ -37,7 +37,7 @@ export default function Home() {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://codecrafters.io" />
-        <meta property="twitter:title" content="Build your own X in Rust" />
+        <meta property="twitter:title" content="Master Rust" />
         <meta
           property="twitter:description"
           content="Build Git, Docker, Redis & SQLite from scratch, in Rust."
