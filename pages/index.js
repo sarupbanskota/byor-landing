@@ -25,7 +25,7 @@ export default function Home() {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://codecrafters.io/" />
-        <meta property="og:title" content="Build your own X" />
+        <meta property="og:title" content="Master your language" />
         <meta
           property="og:description"
           content="Build Git, Docker, Redis & SQLite from scratch."
@@ -37,7 +37,7 @@ export default function Home() {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://codecrafters.io" />
-        <meta property="twitter:title" content="Build your own X" />
+        <meta property="twitter:title" content="Master your language" />
         <meta
           property="twitter:description"
           content="Build Git, Docker, Redis & SQLite from scratch."
