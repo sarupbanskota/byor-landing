@@ -45,7 +45,7 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://codecrafters.io/for/for/landing-og.png"
+          content="https://codecrafters.io/for/for/landing-og-index.png"
         />
       </Head>
       <main className="w-full bg-radial-at-b from-teal-100 via-lime-50 to-white">
