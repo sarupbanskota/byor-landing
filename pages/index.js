@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
-        <title>Master your language</title>
+        <title>Master any language, with real projects</title>
         <link rel="icon" href="/for/favicon.ico" />
-        <meta name="title" content="Master your language" />
+        <meta name="title" content="Master any language, with real projects" />
         <meta
           name="description"
           content="Build Git, Docker, Redis & SQLite from scratch."
@@ -25,7 +25,7 @@ export default function Home() {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://codecrafters.io/" />
-        <meta property="og:title" content="Master your language" />
+        <meta property="og:title" content="Master any language, with real projects" />
         <meta
           property="og:description"
           content="Build Git, Docker, Redis & SQLite from scratch."
@@ -37,7 +37,7 @@ export default function Home() {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://codecrafters.io" />
-        <meta property="twitter:title" content="Master your language" />
+        <meta property="twitter:title" content="Master any language, with real projects" />
         <meta
           property="twitter:description"
           content="Build Git, Docker, Redis & SQLite from scratch."
