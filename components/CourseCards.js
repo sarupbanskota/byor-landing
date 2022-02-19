@@ -151,7 +151,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
             .filter((c) => (upcomingOnly ? c.upcoming : !c.upcoming))
             .map((course) => (
               <a
-                href={`https://app.codecrafters.io/courses/${course.key}`}
+                href={`https://app.codecrafters.io/courses/${course.key}/overview`}
                 key={course.name}
                 className="flex align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left shadow-lg hover:shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6 !pr-0 justify-between items-center min-w-[340px] md:min-w-fit border border-gray-100"
               >
@@ -171,7 +171,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                   </div>
                   <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-start space-x-4">
                     <a
-                      href={`https://app.codecrafters.io/courses/${course.key}`}
+                      href={`https://app.codecrafters.io/courses/${course.key}/overview`}
                       target="_blank"
                       rel="noreferrer"
                     >
