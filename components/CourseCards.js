@@ -152,7 +152,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
             .map((course) => (
               <a
                 href={`https://app.codecrafters.io/courses/${course.key}/overview`}
-                key={course.name}
+                key={course.key}
                 className="flex align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left shadow-lg hover:shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6 !pr-0 justify-between items-center min-w-[340px] md:min-w-fit border border-gray-100"
               >
                 <div>
@@ -206,7 +206,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                     <span className="flex space-x-2">
                       {course.languages.length > 0 &&
                         course.languages.map((language) => (
-                          <div>
+                          <div key={`${language}`}>
                             <Image
                               src={`/for/icons/${language.toLowerCase()}.svg`}
                               alt={`${language} logo`}
