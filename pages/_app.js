@@ -18,9 +18,15 @@ function App({ Component, pageProps }) {
       mixpanel.init("7c58bcd2d5b3b2b95de1d92097a0ce05", {debug: true}); // the Production project on mixpanel
     }
 
-    mixpanel.track("Viewed Page", {
-      page: `for/${router.pathname}`,
-    });
+    if (router.pathname === '/') {
+        mixpanel.track("Viewed Marketing Page - Homepage");
+    } else if (router.pathname === '/about') {
+        mixpanel.track("Viewed Marketing Page - About");
+    } else if (router.pathname === '/rust') {
+        mixpanel.track("Viewed Marketing Page - Rust");
+    } else {
+        mixpanel.track("Viewed Marketing Page - Unknown", { page: `${router.pathname}` });
+    }
 
     let mixpanelDistinctId = mixpanel.get_distinct_id();
 
