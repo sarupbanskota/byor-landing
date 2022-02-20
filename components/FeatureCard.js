@@ -58,7 +58,7 @@ function FeatureCard() {
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <div className="flex flex-wrap justify-center lg:justify-evenly items-center gap-16 md:gap-8">
           {features.map((feature) => (
-            <div key={feature.name} className="pt-6">
+            <div key={feature.icon} className="pt-6">
               <div>
                 <span>
                   <Image
