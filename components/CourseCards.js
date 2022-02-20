@@ -170,11 +170,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                     </div>
                   </div>
                   <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-start space-x-4">
-                    <a
-                      href={`https://app.codecrafters.io/courses/${course.key}/overview`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <div>
                       <div
                         className={`hover:opacity-90 ${classNames(
                           course.theme === "orange"
@@ -206,7 +202,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
                             </svg> Try {course.level} →</span>
                         )}
                       </div>
-                    </a>
+                    </div>
                     <span className="flex space-x-2">
                       {course.languages.length > 0 &&
                         course.languages.map((language) => (
