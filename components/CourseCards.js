@@ -138,6 +138,7 @@ function CourseCards({ title, waitlist, upcomingOnly }) {
       }
     }, 1);
   }, []);
+
   return (
     <div>
       <div className="max-w-7xl mx-auto pb-16 px-4 sm:pb-24 sm:px-6 lg:px-8">

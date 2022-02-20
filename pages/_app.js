@@ -21,6 +21,17 @@ function App({ Component, pageProps }) {
     mixpanel.track("Viewed Page", {
       page: `for/${router.pathname}`,
     });
+
+    let mixpanelDistinctId = mixpanel.get_distinct_id();
+
+    // If a link takes the user to our app, let's append the mixpanel distinct id to the URL.
+    document
+      .querySelectorAll('a')
+      .forEach((element) => {
+        if (element.href && element.href.startsWith('https://app.codecrafters.io')) {
+          element.href = element.href + '?t=' + mixpanelDistinctId;
+        }
+      });
   }, []);
 
   return (
