@@ -10,14 +10,19 @@ export default App;
 
 function App({ Component, pageProps }) {
   const router = useRouter();
+
   useEffect(() => {
-    if (!window.location.href.includes("localhost")) {
-      mixpanel.init("7c58bcd2d5b3b2b95de1d92097a0ce05", { debug: true });
-      mixpanel.track("Viewed Page", {
-        page: `for/${router.pathname}`,
-      });
+    if (window.location.href.includes("localhost")) {
+      mixpanel.init("19a8c3eaf7bd6e3af529d073ff6b73db", {debug: true}); // the Local project on mixpanel
+    } else {
+      mixpanel.init("7c58bcd2d5b3b2b95de1d92097a0ce05", {debug: true}); // the Production project on mixpanel
     }
+
+    mixpanel.track("Viewed Page", {
+      page: `for/${router.pathname}`,
+    });
   }, []);
+
   return (
     <>
       <Script
