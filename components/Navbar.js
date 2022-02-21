@@ -13,27 +13,27 @@ const courses = [
     name: "Build Your Own Redis",
     description:
       "Take your networking skills further, by dissecting how Redis works. ",
-    href: "https://app.codecrafters.io/challenges/redis/overview",
+    href: "https://app.codecrafters.io/courses/redis/overview",
     icon: "/for/logo/redis-half.png",
   },
   {
     name: "Build Your Own Docker",
     description: "Dive deep into how Docker works, including the Registry API.",
-    href: "https://app.codecrafters.io/challenges/docker/overview",
+    href: "https://app.codecrafters.io/courses/docker/overview",
     icon: "/for/logo/docker-half.png",
   },
   {
     name: "Build Your Own Git",
     description:
       "Master the inner workings of Git, and explain any complex scenario. ",
-    href: "https://app.codecrafters.io/challenges/git/overview",
+    href: "https://app.codecrafters.io/courses/git/overview",
     icon: "/for/logo/git-half.png",
   },
   {
     name: "Build Your Own SQLite",
     description:
       "Gain a solid understanding of SQLite’s file format and indexing.",
-    href: "https://app.codecrafters.io/challenges/sqlite/overview",
+    href: "https://app.codecrafters.io/courses/sqlite/overview",
     icon: "/for/logo/sqlite-half.png",
   },
 ];
