@@ -28,19 +28,19 @@ const navigation = {
   courses: [
     {
       name: "Build Your Own Git",
-      href: "https://codecrafters.io/challenges/git",
+      href: "https://app.codecrafters.io/courses/git/overview",
     },
     {
       name: "Build Your Own Redis",
-      href: "https://codecrafters.io/challenges/redis",
+      href: "https://app.codecrafters.io/courses/redis/overview",
     },
     {
       name: "Build Your Own Docker",
-      href: "https://codecrafters.io/challenges/docker",
+      href: "https://app.codecrafters.io/courses/docker/overview",
     },
     {
       name: "Build Your Own SQLite",
-      href: "https://codecrafters.io/challenges/sqlite",
+      href: "https://app.codecrafters.io/courses/sqlite/overview",
     },
   ],
   resources: [
