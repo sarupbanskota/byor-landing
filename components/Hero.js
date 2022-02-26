@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CourseCards } from "./CourseCards";
 import { LogoCloud } from "./LogoCloud";
-import { PrimaryButton } from "./PrimaryButton";
+// import { PrimaryButton } from "./PrimaryButton";
 export { Hero };
 
 function Hero({ title, subtitle, testimonial, dark, hideCourses, hideLogos }) {
