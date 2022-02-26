@@ -4,7 +4,7 @@ import { ImageGrid } from "./ImageGrid";
 import CompaniesData from '../data/Companies'
 
 
-function LogoCloud({ hideLogos }) {
+function LogoCloud() {
   return (
     <div className="bg-black">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
