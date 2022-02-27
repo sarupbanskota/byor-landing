@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { CourseCards } from "./CourseCards";
 import { LogoCloud } from "./LogoCloud";
-// import { PrimaryButton } from "./PrimaryButton";
 export { Hero };
 
 function Hero({ title, subtitle, testimonial, dark, hideCourses, hideLogos }) {
@@ -51,12 +50,6 @@ function Hero({ title, subtitle, testimonial, dark, hideCourses, hideLogos }) {
               >
                 {subtitle}
               </p>
-              {/* <div className="mt-8">
-                <PrimaryButton text="Choose Project →" />
-                <span className="block text-teal-700 mt-2 text-sm">
-                  100% free. No CC required.
-                </span>
-              </div> */}
               <p
                 className={`italic text-lg max-w-xl mt-8 inline-block ${
                   dark ? "text-white" : ""

@@ -33,16 +33,12 @@ type Companies = {
         image: "/for/companies-using-codecrafters/bookingcom.png"
     },
     {
-        name: "salesforce",
-        image: "/for/companies-using-codecrafters/salesforce.png"
-    },
-    {
         name: "meta",
         image: "/for/companies-using-codecrafters/meta.png"
     },
     {
         name: "porsche",
-        image: "/for/companies-using-codecrafters/porsche.png"
+        image: "/for/companies-using-codecrafters/porsche-1.png"
     },
     {
         name: "lyft",
@@ -84,10 +80,10 @@ type Companies = {
         name: "microsoft",
         image: "/for/companies-using-codecrafters/microsoft.png"
     },
-    // {
-    //     name: "jpmorgan",
-    //     image: "/for/companies-using-codecrafters/jpmorganchase.png"
-    // },
+    {
+        name: "jpmorgan",
+        image: "/for/companies-using-codecrafters/jpmorgan.png"
+    },
     {
         name: "visa",
         image: "/for/companies-using-codecrafters/visa.png"
@@ -96,14 +92,6 @@ type Companies = {
         name: "supabase",
         image: "/for/companies-using-codecrafters/supabase.png"
     },
-    {
-        name: "replit",
-        image: "/for/companies-using-codecrafters/replit.png"
-    },
-    {
-        name: "vercel",
-        image: "/for/companies-using-codecrafters/vercel.png"
-    }
   ]
   
   export default data
