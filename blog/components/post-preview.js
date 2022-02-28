@@ -8,7 +8,7 @@ export default function PostPreview({
   coverImage,
   date,
   excerpt,
-  author,
+  authors,
   slug,
 }) {
   return (
@@ -25,7 +25,12 @@ export default function PostPreview({
         <Date dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
+      <div className="hidden md:flex md:mb-12">
+        {authors.map(author => {
+          return <div className='mr-6'><Avatar name={author.name} picture={author.picture} /></div>
+        })}
+        
+      </div>
     </div>
   )
 }

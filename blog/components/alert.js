@@ -25,13 +25,13 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
+              Rust support on the{' '}
               <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
+                href={`https://app.codecrafters.io/courses/git`}
                 className="underline hover:text-success duration-200 transition-colors"
               >
-                available on GitHub
-              </a>
+                Git track
+              </a>{' '} is out of beta
               .
             </>
           )}

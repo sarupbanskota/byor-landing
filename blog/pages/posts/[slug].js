@@ -41,7 +41,7 @@ export default function Post({ data = {}, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | CodeCrafters Blog Post {CMS_NAME}
                 </title>
                 {post.coverImage && (
                   <meta
@@ -59,7 +59,7 @@ export default function Post({ data = {}, preview }) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                author={post.author}
+                authors={post.authors}
               />
               <PostBody content={post.content} />
             </article>
