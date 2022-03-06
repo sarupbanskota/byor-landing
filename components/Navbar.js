@@ -168,6 +168,12 @@ function Navbar() {
           </Popover> */}
           
           <a
+            href="/for/pricing"
+            className="text-base font-medium text-gray-500 hover:text-gray-900"
+          >
+            Pricing
+          </a>
+          <a
             href="/for/about"
             className="text-base font-medium text-gray-500 hover:text-gray-900"
           >
@@ -294,19 +300,23 @@ function Navbar() {
             <div>
               <div className="grid grid-cols-2 overflow-hidden divide-solid divide-x divide-gray-100">
                 <a
-                  href="https://discord.gg/DeqUD2P"
+                  href="/for/pricing"
                   className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700 "
                 >
-                  Discord
+                  Pricing
                 </a>
-
                 <a
                   href="/for/about"
                   className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700 "
                 >
                   About
                 </a>
-
+                <a
+                  href="https://discord.gg/DeqUD2P"
+                  className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700"
+                >
+                  Join Discord
+                </a>
                 {/* {resources.map((resource) => (
                   <a
                     key={resources.name}

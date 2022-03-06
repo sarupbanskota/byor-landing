@@ -50,6 +50,7 @@ const navigation = {
     // { name: "Job Board", href: "#" },
   ],
   company: [
+    { name: "Pricing", href: "/pricing" },
     { name: "About", href: "/about" },
     { name: "For Investors", href: "mailto:sarup@codecrafters.io" },
     { name: "Bulk Licenses", href: "mailto:sarup@codecrafters.io" },
