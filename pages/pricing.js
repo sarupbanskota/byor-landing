@@ -5,7 +5,7 @@ const tiers = [
   {
     name: "Curious Hacker",
     priceMonthly: 0,
-    href: "https://usemotion.com/meet/sarup/20",
+    href: "/for/rust",
     description: "All core features, free.",
     features: [
       "4 Challenges",
@@ -14,6 +14,7 @@ const tiers = [
       "Public Leaderboard",
       "Public Profile Page",
     ],
+    cta: "Get Started",
   },
   {
     name: "Teams & Orgs",
@@ -56,7 +57,7 @@ export default function Pricing() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pb-12 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+        <div className="mt-8 pb-12  sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
           <div className="relative">
             <div className="absolute inset-0 h-3/4 bg-gray-900" />
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -106,7 +107,12 @@ export default function Pricing() {
                           target="_blank"
                           rel="nofollow"
                           href={tier.href}
-                          className="flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 rounded-lg text-center"
+                          className={classNames(
+                            tier.priceMonthly === 0
+                              ? "bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-700 dark:focus:ring-gray-600"
+                              : "bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800",
+                            "flex items-center justify-center px-5 py-3 text-base font-medium rounded-lg text-center text-white"
+                          )}
                           aria-describedby="tier-standard"
                         >
                           {tier.cta}
@@ -120,7 +126,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <Footer offwhite />
+      <Footer />
     </>
   );
 }
