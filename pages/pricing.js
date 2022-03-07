@@ -14,7 +14,6 @@ const tiers = [
       "Public Leaderboard",
       "Public Profile Page",
     ],
-    cta: "Request Invite",
   },
   {
     name: "Teams & Orgs",
@@ -102,7 +101,7 @@ export default function Pricing() {
                           </li>
                         ))}
                       </ul>
-                      <div className="rounded-md shadow">
+                      <div className={tier.cta? "block" : "hidden"}>
                         <a
                           target="_blank"
                           rel="nofollow"
