@@ -61,11 +61,11 @@ const navigation = {
   ],
 };
 
-function Footer({ light, offwhite }) {
+function Footer({ light }) {
   return (
     <footer
       className={
-        light ? "bg-white" : offwhite ? "bg-gray-50" : "bg-radial-at-b from-teal-100 via-lime-50 to-white"
+        light ? "bg-white" : "bg-radial-at-b from-teal-100 via-lime-50 to-white"
       }
       aria-labelledby="footer-heading"
     >
