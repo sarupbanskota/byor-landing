@@ -5,29 +5,29 @@ const tiers = [
   {
     name: "Curious Hacker",
     priceMonthly: 0,
-    href: "/for/rust",
+    href: "https://app.codecrafters.io/courses",
     description: "All core features, free.",
     features: [
-      "4 Challenges",
-      "Discord Access",
-      "Unlimited Attempts",
-      "Public Leaderboard",
-      "Public Profile Page",
+      "4 deep-dive challenges",
+      "Access to community Discord",
+      "Unlimited attempts, unlimited stages",
+      "Public leaderboard, all of CodeCrafters",
+      "Public profile page, all challenges & stages",
     ],
-    cta: "Get Started",
+    cta: "Start Challenge",
   },
   {
     name: "Teams & Orgs",
-    priceMonthly: 48,
+    priceMonthly: 42,
     href: "https://usemotion.com/meet/sarup/20",
-    description: "No usage limits. Unlimited Possibilities.",
+    description: "Unlimited Possibilities.",
     features: [
-      "Base Tier ++",
-      "Slack Integration",
-      "Private Leaderboard",
-      "Reviews & Collaboration",
-      "Your own courses (add-on)",
-      "Hiring assessments (add-on)",
+      "Everything in base tier",
+      "Slack app with org-wide events",
+      "Private leaderboard, scoped to org",
+      "Reviews & collaboration on attempted code",
+      "Bring Your Own Private Courses (Paid add-on)",
+      "Use CodeCrafters for Assessments (Paid Add-on)",
     ],
     cta: "Request Invite",
   },
@@ -48,15 +48,14 @@ export default function Pricing() {
         <div className="pt-12 sm:pt-16 lg:pt-24">
           <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto space-y-2 lg:max-w-none">
-              <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
+              <h2 className="text-lg mb-8 leading-6 font-semibold text-gray-300 uppercase tracking-wider">
                 Pricing
               </h2>
               <p className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-                We meet you where you are.
+                Free for hackers.
               </p>
               <p className="text-xl text-gray-300">
-                Our challenges are 100% free for individual hackers, with the
-                option to upgrade for more reliable builds, and other perks.
+              
               </p>
             </div>
           </div>
@@ -74,7 +73,7 @@ export default function Pricing() {
                     <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                       <div>
                         <h3
-                          className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-teal-100 text-teal-600"
+                          className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-black text-white"
                           id="tier-standard"
                         >
                           {tier.name}
@@ -112,9 +111,9 @@ export default function Pricing() {
                           href={tier.href}
                           className={classNames(
                             tier.priceMonthly === 0
-                              ? "bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-700 dark:focus:ring-gray-600"
-                              : "bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800",
-                            "flex items-center justify-center px-5 py-3 text-base font-medium rounded-lg text-center text-white"
+                              ? "border border-black hover:bg-gray-900 hover:text-white focus:ring-4 focus:ring-gray-700 dark:focus:ring-gray-600"
+                              : "bg-black text-white border border-black hover:bg-white hover:text-black focus:ring-4 focus:ring-gray-700 dark:focus:ring-gray-600",
+                            "flex items-center justify-center px-5 py-3 text-base font-medium rounded-lg text-center"
                           )}
                           aria-describedby={`tier-${tier.name.replace(/([a-z])([A-Z])/g, "$1-$2")
                           .replace(/\s+/g, '-')
