@@ -80,10 +80,13 @@ export default function Pricing() {
                         </h3>
                       </div>
                       <div className="mt-4 flex items-baseline text-6xl font-extrabold">
-                        ${tier.priceMonthly}
+                        {tier.priceMonthly ? <>
+                          ${tier.priceMonthly}
                         <span className="ml-1 text-2xl font-medium text-gray-500">
-                          /mo
+                          /mo/seat
                         </span>
+                        </> : <>Free
+                        </>}
                       </div>
                       <p className="mt-5 text-lg text-gray-500">
                         {tier.description}
