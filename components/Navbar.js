@@ -168,7 +168,7 @@ function Navbar() {
           </Popover> */}
           
           <a
-            href="/for/pricing"
+            href="/pricing"
             className="text-base font-medium text-gray-500 hover:text-gray-900"
           >
             Pricing
@@ -300,7 +300,7 @@ function Navbar() {
             <div>
               <div className="grid grid-cols-2 overflow-hidden divide-solid divide-x divide-gray-100">
                 <a
-                  href="/for/pricing"
+                  href="/pricing"
                   className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700 "
                 >
                   Pricing
