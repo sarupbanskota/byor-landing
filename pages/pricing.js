@@ -9,39 +9,24 @@ const pricing = {
       frequency: "/month",
       description: "All core features, free.",
       features: [
-        "All 4 challenges",
-        "Access to Discord",
-        "At least one stage/day",
-        "Public Leaderboard Access",
-        "Unlimited attempts/day",
+        "4 Challenges",
+        "Discord Access",
+        "Unlimited Attempts",
+        "Public Leaderboard",
         "Public Profile Page",
       ],
       cta: "Request Invite",
       mostPopular: false,
     },
-    // {
-    //   title: 'Obsessed Hacker',
-    //   price: 32,
-    //   frequency: '/month',
-    //   description: 'No usage limits.',
-    //   features: [
-    //     'Everything in base tier',
-    //     'Unlimited attempts/day',
-    //     'Public Profile Page',
-    //   ],
-    //   cta: 'Request Invite',
-    //   mostPopular: true,
-    // },
     {
       title: "Teams & Orgs",
       price: 48,
       frequency: "/month",
       description: "No usage limits. Unlimited Possibilities.",
       features: [
-        "Everything in base tier",
-        "Private Leaderboard",
-        "Advanced analytics",
+        "Base Tier ++",
         "Slack Integration",
+        "Private Leaderboard",
         "Reviews & Collaboration",
         "Your own courses (add-on)",
         "Hiring assessments (add-on)",
@@ -108,7 +93,9 @@ export default function Pricing() {
                 </ul>
               </div>
               <a
-                href="https://usemotion.com/meet/sarup/cc-catchup"
+                target="_blank"
+                rel="nofollow"
+                href="https://usemotion.com/meet/sarup/20"
                 className={classNames(
                   tier.mostPopular
                     ? "bg-teal-400 text-white hover:bg-teal-600"
