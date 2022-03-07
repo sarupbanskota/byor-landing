@@ -38,6 +38,10 @@ function classNames(...classes) {
 }
 
 export default function Pricing() {
+  const extLinksProps = {
+    target:"_blank",
+    rel: "nofollow"
+  }
   return (
     <>
       <div className="bg-gray-900 border-b">
@@ -104,8 +108,7 @@ export default function Pricing() {
                       </ul>
                       <div className={tier.cta? "block" : "hidden"}>
                         <a
-                          target="_blank"
-                          rel="nofollow"
+                          {...tier.priceMonthly !== 0 && {...extLinksProps}}
                           href={tier.href}
                           className={classNames(
                             tier.priceMonthly === 0
@@ -113,7 +116,9 @@ export default function Pricing() {
                               : "bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800",
                             "flex items-center justify-center px-5 py-3 text-base font-medium rounded-lg text-center text-white"
                           )}
-                          aria-describedby="tier-standard"
+                          aria-describedby={`tier-${tier.name.replace(/([a-z])([A-Z])/g, "$1-$2")
+                          .replace(/\s+/g, '-')
+                          .toLowerCase()}`}
                         >
                           {tier.cta}
                         </a>
