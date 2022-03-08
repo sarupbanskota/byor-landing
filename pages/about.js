@@ -10,6 +10,7 @@ import {
   WaitlistForm,
   Footer,
   Team,
+  TestimonialGroup
 } from "components";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
         <title>Projects for hackers</title>
         <link rel="icon" href="/for/favicon.ico" />
       </Head>
-      <main className="w-full bg-radial-at-b from-teal-400 via-lime-50 to-white">
+      <main className="w-full bg-radial-at-t from-black to-gray-900">
         <Hero
           hideCourses
           hideLogos
@@ -44,7 +45,7 @@ export default function Home() {
             author: <>— Richard Feynman</>,
           }}
         />
-        <TestimonialCloud />
+        <TestimonialGroup />
         <Team />
         {/* <FeatureCard /> */}
         {/* <Testimonial whiteBg={true}/> */}

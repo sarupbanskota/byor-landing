@@ -13,3 +13,4 @@ export * from "./StatsLarge";
 export * from "./Team";
 export * from "./FAQ";
 export * from "./BlogPreview";
+export * from "./TestimonialGroup";
