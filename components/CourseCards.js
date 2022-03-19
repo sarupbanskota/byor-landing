@@ -10,7 +10,7 @@ const courses = [
     name: "Build your own Redis",
     desc: "Take your networking skills further, by dissecting how Redis works. ",
     formattedDate: "Live Feb 22",
-    level: "Beginner",
+    level: "Intermediate",
     theme: "red",
     icon: "logo/redis-half-resized.png",
     languages: [
