@@ -6,6 +6,32 @@ export { CourseCards };
 
 const courses = [
   {
+    key: "docker",
+    name: "Build your own Docker",
+    desc: "Dive deep into how Docker works, including the Registry API.",
+    formattedDate: "Live Mar 22",
+    level: "Intermediate",
+    theme: "seablue",
+    icon: "logo/docker-half-resized.png",
+    languages: [
+      "Rust",
+      "Go",
+      "Clang",
+      "PHP",
+      // "Nim"
+    ],
+  },
+  {
+    key: "git",
+    name: "Build your own Git",
+    desc: "Master the inner workings of Git, and explain any complex scenario. ",
+    formattedDate: "Live Feb 22",
+    level: "Advanced",
+    theme: "orange",
+    icon: "logo/git-half-resized.png",
+    languages: ["Rust", "Go", "Python", "Ruby", "Kotlin"],
+  },
+  {
     key: "redis",
     name: "Build your own Redis",
     desc: "Take your networking skills further, by dissecting how Redis works. ",
@@ -20,32 +46,6 @@ const courses = [
       "Python",
       "Go",
       // , "Clang", , "Haskell"
-    ],
-  },
-  {
-    key: "git",
-    name: "Build your own Git",
-    desc: "Master the inner workings of Git, and explain any complex scenario. ",
-    formattedDate: "Live Feb 22",
-    level: "Advanced",
-    theme: "orange",
-    icon: "logo/git-half-resized.png",
-    languages: ["Rust", "Go", "Python", "Ruby", "Kotlin"],
-  },
-  {
-    key: "docker",
-    name: "Build your own Docker",
-    desc: "Dive deep into how Docker works, including the Registry API.",
-    formattedDate: "Live Mar 22",
-    level: "Intermediate",
-    theme: "seablue",
-    icon: "logo/docker-half-resized.png",
-    languages: [
-      "Rust",
-      "Go",
-      "Clang",
-      "PHP",
-      // "Nim"
     ],
   },
   {
