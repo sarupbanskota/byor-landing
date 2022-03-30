@@ -84,7 +84,7 @@ function App({ Component, pageProps }) {
         }}
       />
       <Navbar />
-      <Component {...pageProps} />
+      <Component {...pageProps}/>
     </>
   );
 }
