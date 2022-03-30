@@ -24,13 +24,13 @@ export default function Fact() {
 
       <div class="flex items-center">
         <a
-          class="p-2 px-4 rounded border border-black text-black mr-2"
+          class="p-2 px-4 rounded border border-transparent text-black"
           href="https://news.ycombinator.com"
         >
           Discuss on HN
         </a>
         <a
-          class="p-2 px-4 rounded border border-black bg-black text-white mr-2"
+          class="p-2 px-4 rounded border border-black bg-black text-white"
           href="https://news.ycombinator.com"
         >
           TIL? Tweet it →
@@ -39,25 +39,31 @@ export default function Fact() {
 
       <div class="lg:w-1/3 py-8">
         <p>
-          Torvalds wanted a BitKeeper-like distributed system for the kernel, 
+          Torvalds wanted a BitKeeper-like distributed system for the kernel,
           but none of the available systems met his needs.
-          <br/><br/>
+          <br />
+          <br />
         </p>
         <p>
-          He cited an example of a SCM system needing 30s to apply a patch 
-          and update all associated metadata, and noted that this would 
-          not scale to the needs of Linux kernel development, where 
-          synchronizing with fellow maintainers could
-          require 250 such actions at once. 
-          
-          <br/><br/> For his design criterion, he
-          specified patching should take no more than three seconds, and
-          added three more goals:
-          <br/><br/>
+          He cited an example of a SCM system needing 30s to apply a patch and
+          update all associated metadata, and noted that this would not scale to
+          the needs of Linux kernel development, where synchronizing with fellow
+          maintainers could require 250 such actions at once.
+          <br />
+          <br /> For his design criterion, he specified patching should take no
+          more than three seconds, and added three more goals:
+          <br />
+          <br />
           <ul class="list-disc pl-8 ">
-            <li>Take Concurrent Versions System (CVS) as an example of what not to do; if in doubt, do the exact opposite</li>
+            <li>
+              Take Concurrent Versions System (CVS) as an example of what not to
+              do; if in doubt, do the exact opposite
+            </li>
             <li>Support a distributed, BitKeeper-like workflow</li>
-            <li>Include very strong safeguards against corruption, either accidental or malicious</li>
+            <li>
+              Include very strong safeguards against corruption, either
+              accidental or malicious
+            </li>
           </ul>
         </p>
       </div>
