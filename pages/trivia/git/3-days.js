@@ -45,15 +45,15 @@ export default function Fact() {
         <div class="mt-24">
           <div class="flex flex-col justify-center">
             <div className="atvImg w-[538px] h-[323px]">
-              <img src="https://user-images.githubusercontent.com/3149580/162278038-821b5c20-03c6-43b3-99e8-c71d68d18553.png" />
+              <img src="https://user-images.githubusercontent.com/3149580/162334573-e44d2316-4e95-47cb-8392-27e3519e778c.png" />
 
               <div
                 className="atvImg-layer"
-                data-img="https://user-images.githubusercontent.com/3149580/162278038-821b5c20-03c6-43b3-99e8-c71d68d18553.png"
+                data-img="https://user-images.githubusercontent.com/3149580/162334573-e44d2316-4e95-47cb-8392-27e3519e778c.png"
               ></div>
               <div
                 className="atvImg-layer"
-                data-img="https://user-images.githubusercontent.com/3149580/162278038-821b5c20-03c6-43b3-99e8-c71d68d18553.png"
+                data-img="https://user-images.githubusercontent.com/3149580/162334573-e44d2316-4e95-47cb-8392-27e3519e778c.png"
               ></div>
             </div>
           </div>
