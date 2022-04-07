@@ -4,12 +4,12 @@ export default function Fact() {
   return (
     <main className="w-full h-full to-white p-12">
       <div className="lg:flex justify-around">
-        <div class="lg:w-1/2 px-12">
+        <div class="lg:w-1/2 px-12 border ">
           <h1 class="text-4xl tracking-tight font-extrabold mt-8 mb-4">
             Git Trivia #262
           </h1>
 
-          <div class="py-8 font-['Arial']">
+          <div class="lg py-8 font-['Arial']">
             <p>
               Torvalds wanted a BitKeeper-like distributed system for the
               kernel, but none of the available systems met his needs.
@@ -42,7 +42,7 @@ export default function Fact() {
           </div>
         </div>
 
-        <div class="mt-24">          
+        <div class="mt-24">
           <div class="flex flex-col justify-center">
             <div className="atvImg w-[538px] h-[323px]">
               <img src="https://user-images.githubusercontent.com/3149580/162278038-821b5c20-03c6-43b3-99e8-c71d68d18553.png" />
@@ -57,10 +57,15 @@ export default function Fact() {
               ></div>
             </div>
           </div>
+          <div class="flex justify-center mt-8">
+            <a
+              class="p-2 px-4 rounded border border-black bg-black text-white"
+              href="https://news.ycombinator.com"
+            >
+              Tweet the photo →
+            </a>
+          </div>
         </div>
-
-
-
       </div>
       <Script
         strategy="afterInteractive"
