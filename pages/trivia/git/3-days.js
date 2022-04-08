@@ -23,7 +23,7 @@ export default function Fact() {
         />
         <meta
           property="og:image"
-          content="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png"
+          content="https://codecrafters.io/for/facts/git-weekend.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -38,7 +38,7 @@ export default function Fact() {
         />
         <meta
           property="twitter:image"
-          content="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png"
+          content="https://codecrafters.io/for/facts/git-weekend.png"
         />
       </Head>
       <h1 className="text-4xl lg:text-6xl md:text-8xl font-bold tracking-tighter leading-tight text-center mt-16">
