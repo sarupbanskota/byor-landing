@@ -1,7 +1,42 @@
+import Head from "next/head";
 import Script from "next/script";
 
 export default function Fact() {
   return (
+    <>
+      <Head>
+        <title>Build your own X. Master any language.</title>
+        <link rel="icon" href="/for/favicon.ico" />
+        <meta name="title" content="Git Trivia #547" />
+        <meta
+          name="description"
+          content="Torvald built Git over the weekend"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://codecrafters.io/" />
+        <meta property="og:title" content="Torvald built Git over the weekend" />
+        <meta
+          property="og:description"
+          content="Torvald built Git over the weekend"
+        />
+        <meta
+          property="og:image"
+          content="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://codecrafters.io" />
+        <meta property="twitter:title" content="Torvald built Git over the weekend" />
+        <meta
+          property="twitter:description"
+          content="Torvald built Git over the weekend"
+        />
+        <meta
+          property="twitter:image"
+          content="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png"
+        />
+      </Head>
     <main className="w-full h-full flex flex-col items-center p-12 bg-radial-at-tr from-black via-black to-slate-900">
       <div>
         <div class="flex flex-col justify-center">
@@ -59,5 +94,6 @@ export default function Fact() {
         }}
       />
     </main>
+    </>
   );
 }
