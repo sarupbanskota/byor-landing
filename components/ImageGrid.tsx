@@ -71,7 +71,7 @@ function ImageGrid({
         const Container = ({ children, link }: any) => {
           if (x.link) {
             return (
-              <Link href={link}>
+              <Link key={link} href={link}>
                 <div className="cursor-pointer transform duration-100 ease-in-out scale-100 hover:scale-105 hover:shadow-sm hover:z-50">
                   {children}
                 </div>
@@ -90,7 +90,7 @@ function ImageGrid({
                   col-span-1 flex items-center justify-center 
                 bg-gray-700/30
                   ${x.link && "bg-gray-600"}
-                  p-8 ${className}`}
+                  px-6 py-8 ${className}`}
             >
               <div
                 className={`relative overflow-auto w-full h-8
