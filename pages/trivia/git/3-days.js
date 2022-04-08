@@ -95,10 +95,10 @@ export default function Fact() {
         </div>
       </main>
 
-      <div class="bg-radial-at-b from-teal-200 via-lime-50 to-white text-center lg:text=left lg:mt-12">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <div class="bg-radial-at-b from-teal-200 via-lime-50 to-white text-center lg:text-left lg:mt-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-48 lg:flex lg:items-center lg:justify-between">
           <h2 class="text-3xl font-extrabold tracking-tight text-black sm:text-4xl">
-            <span class="block">The curious hacker's <br class="lg:hidden"/>best kept secret.</span>
+            <span class="block">The curious hacker's <br/>best kept secret.</span>
           </h2>
           <div class="mt-8 flex justify-center lg:mt-0 lg:flex-shrink-0">
             <PrimaryButton
