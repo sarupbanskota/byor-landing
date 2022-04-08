@@ -9,17 +9,17 @@ export default function Fact() {
         <title>Build your own X. Master any language.</title>
         <link rel="icon" href="/for/favicon.ico" />
         <meta name="title" content="Git Trivia #547" />
-        <meta name="description" content="Torvald built Git over the weekend" />
+        <meta name="description" content="Torvalds built Git over the weekend" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://codecrafters.io/" />
         <meta
           property="og:title"
-          content="Torvald built Git over the weekend"
+          content="Torvalds built Git over the weekend"
         />
         <meta
           property="og:description"
-          content="Torvald built Git over the weekend"
+          content="Torvalds built Git over the weekend"
         />
         <meta
           property="og:image"
@@ -30,11 +30,11 @@ export default function Fact() {
         <meta property="twitter:url" content="https://codecrafters.io" />
         <meta
           property="twitter:title"
-          content="Torvald built Git over the weekend"
+          content="Torvalds built Git over the weekend"
         />
         <meta
           property="twitter:description"
-          content="Torvald built Git over the weekend"
+          content="Torvalds built Git over the weekend"
         />
         <meta
           property="twitter:image"
