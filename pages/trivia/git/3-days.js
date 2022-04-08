@@ -2,71 +2,56 @@ import Script from "next/script";
 
 export default function Fact() {
   return (
-    <main className="w-full h-full to-white p-12">
-      <div className="lg:flex justify-around">
-        <div class="lg:w-1/2 px-12 border ">
-          <h1 class="text-4xl tracking-tight font-extrabold mt-8 mb-4">
-            Git Trivia #262
-          </h1>
+    <main className="w-full h-full flex flex-col items-center p-12 bg-radial-at-tr from-black via-black to-slate-900">
+      <div>
+        <div class="flex flex-col justify-center">
+          <div className="atvImg w-[538px] h-[323px]">
+            <img src="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png" />
 
-          <div class="lg py-8 font-['Arial']">
-            <p>
-              Torvalds wanted a BitKeeper-like distributed system for the
-              kernel, but none of the available systems met his needs.
-              <br />
-              <br />
-            </p>
-            <p>
-              He cited an example of a SCM system needing 30s to apply a patch
-              and update all associated metadata, and noted that this would not
-              scale to the needs of Linux kernel development, where
-              synchronizing with fellow maintainers could require 250 such
-              actions at once.
-              <br />
-              <br /> For his design criterion, he specified patching should take
-              no more than three seconds, and added three more goals:
-              <br />
-              <br />
-              <ul class="list-disc pl-8 ">
-                <li>
-                  Take Concurrent Versions System (CVS) as an example of what
-                  not to do; if in doubt, do the exact opposite
-                </li>
-                <li>Support a distributed, BitKeeper-like workflow</li>
-                <li>
-                  Include very strong safeguards against corruption, either
-                  accidental or malicious
-                </li>
-              </ul>
-            </p>
+            <div
+              className="atvImg-layer"
+              data-img="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png"
+            ></div>
+            <div
+              className="atvImg-layer"
+              data-img="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png"
+            ></div>
           </div>
         </div>
-
-        <div class="mt-24">
-          <div class="flex flex-col justify-center">
-            <div className="atvImg w-[538px] h-[323px]">
-              <img src="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png" />
-
-              <div
-                className="atvImg-layer"
-                data-img="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png"
-              ></div>
-              <div
-                className="atvImg-layer"
-                data-img="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png"
-              ></div>
-            </div>
-          </div>
-          <div class="flex justify-center mt-8">
-            <a
-              class="p-2 px-4 rounded border border-black bg-black text-white"
-              href="https://news.ycombinator.com"
-            >
-              Tweet the photo →
-            </a>
-          </div>
+        <div class="flex justify-center mt-8">
+          <a
+            class="p-2 px-4 rounded border border-white text-white hover:bg-white hover:text-black transition duration-300"
+            href="https://news.ycombinator.com"
+          >
+            Tweet the photo →
+          </a>
         </div>
       </div>
+      <div class="mt-8">
+        <div class="lg:max-w-[400px] text-gray-200 tracking-wide">
+          <p>
+            Torvalds wanted a BitKeeper-like DVCS for the kernel, but no
+            available systems met his needs.
+          </p>
+          <p>
+            <br /> He wanted patching under three seconds, and added three more goals:
+            <br />
+            <br />
+            <ul class="list-disc pl-8 ">
+              <li>Support a distributed, BitKeeper-like workflow</li>
+              <li>
+                Include very strong safeguards against corruption, either
+                accidental or malicious
+              </li>
+              <li>
+                Take Concurrent Versions System (CVS) as an example of what not
+                to do; if in doubt, do the exact opposite
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div className="lg:flex lg:justify-between"></div>
       <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
