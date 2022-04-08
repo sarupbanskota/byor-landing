@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Link from "next/link";
+import ImageGridContainer from "./ImageGridContainer";
 
 export { ImageGrid };
 
@@ -68,22 +69,8 @@ function ImageGrid({
     `}
     >
       {images.map((x, i) => {
-        const Container = ({ children, link }: any) => {
-          if (x.link) {
-            return (
-              <Link key={link} href={link}>
-                <div className="cursor-pointer transform duration-100 ease-in-out scale-100 hover:scale-105 hover:shadow-sm hover:z-50">
-                  {children}
-                </div>
-              </Link>
-            );
-          } else {
-            return children;
-          }
-        };
-
         return (
-          <Container link={x.link} key={i}>
+          <ImageGridContainer link={x.link} key={i}>
             <div
               key={`${x.name}-${i}`}
               className={`
@@ -112,7 +99,7 @@ function ImageGrid({
                 />
               </div>
             </div>
-          </Container>
+          </ImageGridContainer>
         );
       })}
     </div>
