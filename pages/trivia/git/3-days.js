@@ -72,7 +72,7 @@ export default function Fact() {
         </div>
         <div class="mb-12 lg:mb-0">
           <div class="flex flex-col justify-center">
-            <div className="atvImg w-[430px] h-[258px]">
+            <div className="atvImg w-[286px] h-[172px] lg:w-[430px] lg:h-[258px]">
               <img src="https://user-images.githubusercontent.com/3149580/162380490-8383aa1a-079c-4f4b-a2ce-93a431d2892c.png" />
               <div
                 className="atvImg-layer"
