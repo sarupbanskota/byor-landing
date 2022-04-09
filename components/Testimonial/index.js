@@ -26,7 +26,7 @@ function Testimonial({ author, course, testimonial }) {
             color="black"
             link={"https://app.codecrafters.io/courses/redis/overview"}
           />
-          <a href="/testimonials" target="_blank" rel="noreferrer">
+          <a href="/about" target="_blank" rel="noreferrer">
             <div className="inline-flex mt-4 gap-2 items-center">
               <StackedAvatars />{" "}
               <p className="text-sm">Read more testimonials </p>
