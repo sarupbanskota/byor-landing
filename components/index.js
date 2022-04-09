@@ -1,4 +1,6 @@
 export * from "./FeatureCard";
+export * from "./VideoBox";
+export * from "./VideoPlayerCSS";
 export * from "./Hero";
 export * from "./Testimonial";
 export { TestimonialCloud } from "./Testimonial/Cloud";

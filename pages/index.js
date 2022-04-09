@@ -9,9 +9,40 @@ import {
   ValuePropositions,
   WaitlistForm,
   Footer,
+  VideoBox,
+  VideoPlayerCSS
 } from "components";
+import { useRef } from "react";
 
 export default function Home() {
+
+  const playerRef = useRef(null);
+
+  const videoJsOptions = {
+    autoplay: 'muted',
+    controls: false,
+    responsive: true,
+    loop: true,
+    fluid: true,
+    sources: [{
+      src: 'https://user-images.githubusercontent.com/3149580/158115188-83d00c2f-1c84-411b-b78f-e5cf2ba4264f.mp4',
+      type: 'video/mp4'
+    }]
+  }
+
+  const handlePlayerReady = (player) => {
+    playerRef.current = player;
+
+    // you can handle player events here
+    player.on('waiting', () => {
+      console.log('player is waiting');
+    });
+
+    player.on('dispose', () => {
+      console.log('player will dispose');
+    });
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
@@ -66,6 +97,10 @@ export default function Home() {
             author: <>— Richard Feynman</>,
           }}
         />
+        {/* <div className="w-1/2">
+          <VideoBox options={videoJsOptions} onReady={handlePlayerReady} />
+        </div> */}
+        
         <FeatureCard />
         <Testimonial
           whiteBg={true}

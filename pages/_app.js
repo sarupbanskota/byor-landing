@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "video.js/dist/video-js.css";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import mixpanel from "mixpanel-browser";
