@@ -4,6 +4,50 @@ import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 
 const people = [
   {
+    name: "Maya Farber Brodsky",
+    title: "Participant",
+    org: "Recurse Center",
+    imageUrl:
+      "/for/testimonials/maya-farber-brodsky.png",
+    testimonial:
+      "I've started the Docker challenge, enjoying it a lot so far. Just the right level of guidance, helpful and still gives you a lot of freedom to explore and learn for yourself.",
+  },
+  {
+    name: "Djordje Lukic",
+    title: "Staff Software Engineer",
+    org: "Docker",
+    imageUrl:
+      "/for/testimonials/rumpl.jpeg",
+    testimonial:
+      "These guys ruined my weekend"
+  },
+  {
+    name: "Rahul Tarak (Modfy.video)",
+    title: "Fellow",
+    org: "Pioneer.app & ODX1",
+    imageUrl:
+      "/for/testimonials/rahul.jpeg",
+    testimonial:
+      "The Redis challenge was a great way to procrastinate sleeping for a week! A good change of pace from my regular work, and allowed me to explore some cool tech. I'll be back for more."
+  },
+  {
+    name: "Pranjal Paliwal",
+    title: "$35k winner of HackAtom",
+    org: "Cosmos",
+    imageUrl:
+      "/for/testimonials/pranjal-paliwal.jpeg",
+    testimonial: "My favorite way to master a language.",
+  },
+  {
+    name: "Kang Ming Tay",
+    title: "Software Engineer",
+    org: "Supabase",
+    imageUrl:
+      "/for/testimonials/kangming.jpeg",
+    testimonial:
+      "The Docker challenge helped me dive into its internals, through *actual* practice. Super fun."
+  },
+  {
     name: "Ananthalakshmi Sankar",
     title: "Automation Engineer",
     org: "Apple",
@@ -11,6 +55,15 @@ const people = [
       "/for/testimonials/ananthalakshm-sankar.jpeg",
     testimonial:
       "There are few sites I like as much that have a step by step guide. The real-time feedback is so good, it's creepy!",
+  },
+  {
+    name: "Beyang Liu",
+    title: "Chief Technology Officer",
+    org: "SourceGraph",
+    imageUrl:
+      "/for/testimonials/beyang-liu.jpeg",
+    testimonial:
+      "Found out from a colleague. It has you build your own version of things like Git and Docker from scratch. A cool way to build a stronger mental model of how those tools work.",
   },
   {
     name: "Raghav Dua",
@@ -22,13 +75,29 @@ const people = [
       "I spent a full day on your Docker building course and ended up building the whole thing myself. As a SRE (and mostly a user of docker), digging into the internals blew me away.",
   },
   {
-    name: "Maya Farber Brodsky",
-    title: "Participant",
-    org: "Recurse Center",
+    name: "Akshata Mohan",
+    title: "Senior Data Scientist",
+    org: "Cloudflare",
+    imageUrl: "/for/testimonials/oxta.jpeg",
+    testimonial: "I'm learning about how Redis works under the hood, system calls, socket programming in Python — something I've never done before"
+  },
+  {
+    name: "Jonathan Lorimer",
+    title: "Lead Software Engineer",
+    org: "Mercury Bank",
     imageUrl:
-      "/for/testimonials/maya-farber-brodsky.png",
+      "/for/testimonials/jonathan.jpeg",
     testimonial:
-      "I've started the Docker challenge, enjoying it a lot so far. Just the right level of guidance, helpful and still gives you a lot of freedom to explore and learn for yourself.",
+      <>I was really impressed that they support Haskell, and will probably use this to learn Rust! The git-based workflow is <i>:chefkiss:</i></>,
+  },
+  {
+    name: "Charles Guo",
+    title: "Engineer on Scala Team",
+    org: "Stripe",
+    imageUrl:
+      "/for/avatar-charles-guo.png",
+    testimonial:
+      "The Redis challenge was extremely fun. I ended up having to read Redis protocol specification doc pretty carefully in its entirety! The result felt like lightly-guided independent study, if that makes sense. (Which, again, was lots of fun)"
   },
   {
     name: "Patrick Burris",
@@ -38,23 +107,6 @@ const people = [
       "/for/testimonials/patrick-burris.jpeg",
     testimonial:
       "The instant feedback right there in the git push is really cool. Didn't even know that was possible!",
-  },
-  {
-    name: "Pranjal Paliwal",
-    title: "$35k winner of HackAtom 2021",
-    org: "Headout",
-    imageUrl:
-      "/for/testimonials/pranjal-paliwal.jpeg",
-    testimonial: "My favorite way to master a language.",
-  },
-  {
-    name: "Beyang Liu",
-    title: "Chief Technology Officer",
-    org: "SourceGraph",
-    imageUrl:
-      "/for/testimonials/beyang-liu.jpeg",
-    testimonial:
-      "Found out from a colleague. It has you build your own version of things like Git and Docker from scratch. A cool way to build a stronger mental model of how those tools work.",
   },
   // More people...
 ];
