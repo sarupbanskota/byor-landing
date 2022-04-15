@@ -97,7 +97,7 @@ export default function Home() {
             author: <>— Richard Feynman</>,
           }}
         />
-        <div>
+        <div className="sm:hidden md:block">
           <VideoBox options={videoJsOptions} onReady={handlePlayerReady} />
         </div>
         
