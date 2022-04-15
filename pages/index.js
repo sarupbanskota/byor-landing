@@ -25,7 +25,7 @@ export default function Home() {
     loop: true,
     fluid: true,
     sources: [{
-      src: 'https://user-images.githubusercontent.com/3149580/158115188-83d00c2f-1c84-411b-b78f-e5cf2ba4264f.mp4',
+      src: 'https://user-images.githubusercontent.com/3149580/163636092-60bf5e22-cb4c-4f05-a17f-516b88a77a1a.mp4',
       type: 'video/mp4'
     }]
   }
@@ -97,9 +97,9 @@ export default function Home() {
             author: <>— Richard Feynman</>,
           }}
         />
-        {/* <div className="w-1/2">
+        <div>
           <VideoBox options={videoJsOptions} onReady={handlePlayerReady} />
-        </div> */}
+        </div>
         
         <FeatureCard />
         <Testimonial
