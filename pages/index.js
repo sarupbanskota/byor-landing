@@ -101,7 +101,7 @@ export default function Home() {
           <VideoBox options={videoJsOptions} onReady={handlePlayerReady} />
         </div>
         
-        <FeatureCard />
+        <div className="md:hidden"><FeatureCard /></div>
         <Testimonial
           whiteBg={true}
           course="redis"
