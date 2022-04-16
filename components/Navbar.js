@@ -313,7 +313,7 @@ function Navbar() {
                 </a>
                 <a
                   href="https://discord.gg/DeqUD2P"
-                  className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700"
+                  className="py-6 px-5 text-base text-center font-medium text-gray-900 hover:text-gray-700 col-span-2"
                 >
                   Join Discord
                 </a>
