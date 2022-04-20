@@ -174,7 +174,7 @@ function Footer({ light }) {
         </div>
         <div className="mt-12 pt-8">
           <p className="text-base text-black opacity-20 text-center">
-            &copy; {new Date().getFullYear()} Educode Limited. All rights
+            &copy; {new Date().getFullYear()} CodeCrafters, Inc. All rights
             reserved.
           </p>
         </div>
