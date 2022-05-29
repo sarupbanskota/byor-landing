@@ -55,9 +55,9 @@ function Hero({ title, subtitle, testimonial, dark, hideCourses, hideLogos }) {
                   dark ? "text-white" : ""
                 }`}
               >
-                {testimonial.quote}
+                {testimonial?.quote}
                 <br />
-                <span className="text-sm">{testimonial.author}</span>
+                <span className="text-sm">{testimonial?.author}</span>
               </p>
             </div>
           </div>

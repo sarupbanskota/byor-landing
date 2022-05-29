@@ -82,19 +82,18 @@ export default function Home() {
         <Hero
           title={
             <>
-              Deep dive projects <br />
-              for curious hackers.
+              The Golang Pro's <br/> Best Kept Secret.
             </>
           }
           subtitle={
             <>
-              The adventure you always wanted. <br /> In the language you wanted
-              to master.
+              Go beyond the basics. Master advanced patterns, discover <br/>unique features, and 
+              create the best version of yourself.
             </>
           }
           testimonial={{
-            quote: <>“What I cannot create, I do not understand”</>,
-            author: <>— Richard Feynman</>,
+            quote: <>"Knowing what you don't know is very special”</>,
+            author: <>— Akshata Mohan, Senior Data Scientist at Cloudflare</>,
           }}
         />
         <div className="hidden md:block px-48 bg-white">
